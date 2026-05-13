@@ -1,0 +1,278 @@
+{
+  "baseIRI": "http://example.org/qsr_kg#",
+  "namespaces": {
+    "events": "http://example.org/qsr_kg/QSREventsOntology#",
+    "timeOnt": "http://example.org/qsr_kg/QSRTimeOntology#",
+    "location": "http://example.org/qsr_kg/QSRLocationOntology#",
+    "inventory": "http://example.org/qsr_kg/QSRInventoryOntology#",
+    "promotions": "http://example.org/qsr_kg/QSRPromotionsOntology#",
+    "competition": "http://example.org/qsr_kg/QSRCompetitionOntology#",
+    "performance": "http://example.org/qsr_kg/QSRPerformanceOntology#",
+    "core": "http://example.org/qsr_kg/QSRCoreOntology#",
+    "base": "http://example.org/qsr_kg#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "subjectMappings": [
+    {
+      "propertyMappings": [
+        {
+          "property": {
+            "transformation": {
+              "expression": "rdfs",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "label"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "promo_name",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "literal"
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "promotions",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "hasStartingBusinessDay"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "'http://example.org/qsr_kg#'+cells['start_date'].value.md5()",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "propertyMappings": [],
+                "type": "iri",
+                "typeMappings": []
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "promotions",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "hasEndingBusinessDay"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "'http://example.org/qsr_kg#'+cells['end_date'].value.md5()",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "propertyMappings": [],
+                "type": "iri",
+                "typeMappings": []
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "rdfs",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "comment"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "description",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "literal"
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "events",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "forStore"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "core",
+                "language": "prefix"
+              },
+              "valueSource": {
+                "columnName": "applicable_stores",
+                "source": "column"
+              },
+              "valueType": {
+                "propertyMappings": [],
+                "type": "iri",
+                "typeMappings": []
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "base",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "isApplicableOn"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "base",
+                "language": "prefix"
+              },
+              "valueSource": {
+                "columnName": "applicable_days",
+                "source": "column"
+              },
+              "valueType": {
+                "propertyMappings": [],
+                "type": "iri",
+                "typeMappings": []
+              }
+            }
+          ]
+        }
+      ],
+      "subject": {
+        "transformation": {
+          "expression": "promotions",
+          "language": "prefix"
+        },
+        "valueSource": {
+          "columnName": "promo_id",
+          "source": "column"
+        }
+      },
+      "typeMappings": [
+        {
+          "transformation": {
+            "expression": "promotions",
+            "language": "prefix"
+          },
+          "valueSource": {
+            "source": "constant",
+            "constant": "Promotion"
+          }
+        }
+      ]
+    },
+    {
+      "propertyMappings": [
+        {
+          "property": {
+            "transformation": {
+              "expression": "base",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "date"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "start_date",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "literal"
+              }
+            }
+          ]
+        }
+      ],
+      "subject": {
+        "transformation": {
+          "expression": "'http://example.org/qsr_kg#'+cells['start_date'].value.md5()",
+          "language": "grel"
+        },
+        "valueSource": {
+          "source": "row_index"
+        }
+      },
+      "typeMappings": []
+    },
+    {
+      "propertyMappings": [
+        {
+          "property": {
+            "transformation": {
+              "expression": "base",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "date"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "end_date",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "literal"
+              }
+            }
+          ]
+        }
+      ],
+      "subject": {
+        "transformation": {
+          "expression": "'http://example.org/qsr_kg#'+cells['end_date'].value.md5()",
+          "language": "grel"
+        },
+        "valueSource": {
+          "source": "row_index"
+        }
+      },
+      "typeMappings": []
+    }
+  ]
+}

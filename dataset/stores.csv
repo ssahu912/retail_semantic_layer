@@ -1,0 +1,6 @@
+store_id,store_name,location_name,latitude,longitude,opening_date,store_size_sqm,seating_capacity,drive_thru,delivery_enabled,staff_count,rent_sar_monthly,district,store_type
+S001,Burger Haven - Olaya,Olaya District,24.7136,46.6753,2020-03-15,180,45,TRUE,TRUE,18,85000,Olaya,Urban Premium
+S002,Burger Haven - Al Malqa,Al Malqa Mall,24.7831,46.6186,2019-06-20,220,60,TRUE,TRUE,22,95000,Al Malqa,Mall Location
+S003,Burger Haven - King Fahd,King Fahd Road,24.6877,46.7219,2018-11-10,160,35,FALSE,TRUE,15,75000,Al Sahafa,Urban Standard
+S004,Burger Haven - Granada,Granada Center,24.7744,46.7377,2021-01-25,200,50,TRUE,TRUE,20,90000,Granada,Shopping Center
+S005,Burger Haven - Riyadh Park,Riyadh Park Mall,24.7536,46.6444,2019-09-05,250,70,FALSE,TRUE,25,110000,Hittin,Mall Premium

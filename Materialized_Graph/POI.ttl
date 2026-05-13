@@ -1,0 +1,207 @@
+@base <http://example.org/qsr_kg#> .
+@prefix events: <http://example.org/qsr_kg/QSREventsOntology#> .
+@prefix timeOnt: <http://example.org/qsr_kg/QSRTimeOntology#> .
+@prefix location: <http://example.org/qsr_kg/QSRLocationOntology#> .
+@prefix inventory: <http://example.org/qsr_kg/QSRInventoryOntology#> .
+@prefix promotions: <http://example.org/qsr_kg/QSRPromotionsOntology#> .
+@prefix competition: <http://example.org/qsr_kg/QSRCompetitionOntology#> .
+@prefix performance: <http://example.org/qsr_kg/QSRPerformanceOntology#> .
+@prefix core: <http://example.org/qsr_kg/QSRCoreOntology#> .
+@prefix base: <http://example.org/qsr_kg#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+location:POI001 a location:PointOfInterest;
+  location:hasPOICategory location:MALL;
+  rdfs:label "Kingdom Centre";
+  rdfs:comment "High-end shopping mall" .
+
+core:S001 location:near location:POI001, location:POI002, location:POI003, location:POI004,
+    location:POI005, location:POI006, location:POI032 .
+
+location:POI002 a location:PointOfInterest;
+  location:hasPOICategory location:OFFICE;
+  rdfs:label "Al Faisaliah Tower";
+  rdfs:comment "Major office complex" .
+
+location:POI003 a location:PointOfInterest;
+  location:hasPOICategory location:HOSPITAL;
+  rdfs:label "King Fahd Medical City";
+  rdfs:comment "Large medical facility" .
+
+location:POI004 a location:PointOfInterest;
+  location:hasPOICategory location:RESIDENTIAL;
+  rdfs:label "Olaya Residential Area";
+  rdfs:comment "Dense residential zone" .
+
+location:POI005 a location:PointOfInterest;
+  location:hasPOICategory location:SCHOOL;
+  rdfs:label "Riyadh International School";
+  rdfs:comment "International school" .
+
+location:POI006 a location:PointOfInterest;
+  location:hasPOICategory location:MALL;
+  rdfs:label "Al Nakheel Mall";
+  rdfs:comment "Mid-tier shopping center" .
+
+location:POI007 a location:PointOfInterest;
+  location:hasPOICategory location:MALL;
+  rdfs:label "Al Malqa Mall";
+  rdfs:comment "Major shopping destination" .
+
+core:S002 location:near location:POI007, location:POI008, location:POI009, location:POI010,
+    location:POI011, location:POI012, location:POI033 .
+
+location:POI008 a location:PointOfInterest;
+  location:hasPOICategory location:RESIDENTIAL;
+  rdfs:label "Northern Suburbs";
+  rdfs:comment "Family neighborhoods" .
+
+location:POI009 a location:PointOfInterest;
+  location:hasPOICategory location:OFFICE;
+  rdfs:label "Qurtubah Business District";
+  rdfs:comment "Business offices" .
+
+location:POI010 a location:PointOfInterest;
+  location:hasPOICategory location:RECREATION;
+  rdfs:label "Al Malqa Park";
+  rdfs:comment "Public park" .
+
+location:POI011 a location:PointOfInterest;
+  location:hasPOICategory location:HOSPITAL;
+  rdfs:label "King Saud Medical Complex";
+  rdfs:comment "Hospital facility" .
+
+location:POI012 a location:PointOfInterest;
+  location:hasPOICategory location:SCHOOL;
+  rdfs:label "Dar Al Uloom School";
+  rdfs:comment "Private school" .
+
+location:POI013 a location:PointOfInterest;
+  location:hasPOICategory location:OFFICE;
+  rdfs:label "Al Sahafa District Offices";
+  rdfs:comment "Major business hub" .
+
+core:S003 location:near location:POI013, location:POI014, location:POI015, location:POI016,
+    location:POI017, location:POI018, location:POI034 .
+
+location:POI014 a location:PointOfInterest;
+  location:hasPOICategory location:MALL;
+  rdfs:label "Granada Center";
+  rdfs:comment "Shopping center" .
+
+location:POI015 a location:PointOfInterest;
+  location:hasPOICategory location:RECREATION;
+  rdfs:label "King Fahd Stadium";
+  rdfs:comment "Sports stadium" .
+
+location:POI016 a location:PointOfInterest;
+  location:hasPOICategory location:RESIDENTIAL;
+  rdfs:label "Al Rawdah Residential";
+  rdfs:comment "Residential area" .
+
+location:POI017 a location:PointOfInterest;
+  location:hasPOICategory location:UNIVERSITY;
+  rdfs:label "Prince Sultan University";
+  rdfs:comment "Private university" .
+
+location:POI018 a location:PointOfInterest;
+  location:hasPOICategory location:HOSPITAL;
+  rdfs:label "Specialized Hospital";
+  rdfs:comment "Specialist medical center" .
+
+location:POI019 a location:PointOfInterest;
+  location:hasPOICategory location:MALL;
+  rdfs:label "Granada Center";
+  rdfs:comment "Popular shopping mall" .
+
+core:S004 location:near location:POI019, location:POI020, location:POI021, location:POI022,
+    location:POI023, location:POI024, location:POI035 .
+
+location:POI020 a location:PointOfInterest;
+  location:hasPOICategory location:RESIDENTIAL;
+  rdfs:label "Granada Heights";
+  rdfs:comment "Modern residential" .
+
+location:POI021 a location:PointOfInterest;
+  location:hasPOICategory location:RESIDENTIAL;
+  rdfs:label "Al Aqeeq District";
+  rdfs:comment "Family neighborhoods" .
+
+location:POI022 a location:PointOfInterest;
+  location:hasPOICategory location:MALL;
+  rdfs:label "Riyadh Gallery Mall";
+  rdfs:comment "Large shopping mall" .
+
+location:POI023 a location:PointOfInterest;
+  location:hasPOICategory location:CULTURAL;
+  rdfs:label "King Abdulaziz Public Library";
+  rdfs:comment "Public library" .
+
+location:POI024 a location:PointOfInterest;
+  location:hasPOICategory location:OFFICE;
+  rdfs:label "Granada Tech Park";
+  rdfs:comment "Tech companies" .
+
+location:POI025 a location:PointOfInterest;
+  location:hasPOICategory location:MALL;
+  rdfs:label "Riyadh Park Mall";
+  rdfs:comment "Premium shopping mall" .
+
+core:S005 location:near location:POI025, location:POI026, location:POI027, location:POI028,
+    location:POI029, location:POI030, location:POI031, location:POI036 .
+
+location:POI026 a location:PointOfInterest;
+  location:hasPOICategory location:RESIDENTIAL;
+  rdfs:label "Hittin District";
+  rdfs:comment "Upscale residential" .
+
+location:POI027 a location:PointOfInterest;
+  location:hasPOICategory location:MALL;
+  rdfs:label "Panorama Mall";
+  rdfs:comment "Shopping center" .
+
+location:POI028 a location:PointOfInterest;
+  location:hasPOICategory location:OFFICE;
+  rdfs:label "Al Murooj Complex";
+  rdfs:comment "Corporate offices" .
+
+location:POI029 a location:PointOfInterest;
+  location:hasPOICategory location:HOSPITAL;
+  rdfs:label "Prince Sultan Military Medical City";
+  rdfs:comment "Military hospital" .
+
+location:POI030 a location:PointOfInterest;
+  location:hasPOICategory location:SCHOOL;
+  rdfs:label "International Indian School";
+  rdfs:comment "International school" .
+
+location:POI031 a location:PointOfInterest;
+  location:hasPOICategory location:OFFICE;
+  rdfs:label "Diplomatic Quarter";
+  rdfs:comment "Embassy area" .
+
+location:POI032 a location:PointOfInterest;
+  location:hasPOICategory location:COMMERCIAL;
+  rdfs:label "Tahlia Street";
+  rdfs:comment "High-end shopping street" .
+
+location:POI033 a location:PointOfInterest;
+  location:hasPOICategory location:OFFICE;
+  rdfs:label "Al Nakheel Plaza";
+  rdfs:comment "Office building" .
+
+location:POI034 a location:PointOfInterest;
+  location:hasPOICategory location:MALL;
+  rdfs:label "Sahara Mall";
+  rdfs:comment "Shopping mall" .
+
+location:POI035 a location:PointOfInterest;
+  location:hasPOICategory location:RECREATION;
+  rdfs:label "Granada Sports Club";
+  rdfs:comment "Sports facility" .
+
+location:POI036 a location:PointOfInterest;
+  location:hasPOICategory location:RECREATION;
+  rdfs:label "Riyadh Zoo";
+  rdfs:comment "Zoo and park" .

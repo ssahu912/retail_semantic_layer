@@ -1,0 +1,2262 @@
+@base <http://example.org/qsr_kg#> .
+@prefix events: <http://example.org/qsr_kg/QSREventsOntology#> .
+@prefix timeOnt: <http://example.org/qsr_kg/QSRTimeOntology#> .
+@prefix location: <http://example.org/qsr_kg/QSRLocationOntology#> .
+@prefix inventory: <http://example.org/qsr_kg/QSRInventoryOntology#> .
+@prefix promotions: <http://example.org/qsr_kg/QSRPromotionsOntology#> .
+@prefix competition: <http://example.org/qsr_kg/QSRCompetitionOntology#> .
+@prefix performance: <http://example.org/qsr_kg/QSRPerformanceOntology#> .
+@prefix core: <http://example.org/qsr_kg/QSRCoreOntology#> .
+@prefix base: <http://example.org/qsr_kg#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+events:TXN000001 a events:SalesAggregation;
+  events:hasAmount 10330.56;
+  events:forStore core:S001;
+  events:aggregatesOn base:3dfeb9a1278a0489cf08b7b6c2844963 .
+
+events:TXN000002 a events:SalesAggregation;
+  events:hasAmount 13171.27;
+  events:forStore core:S002;
+  events:aggregatesOn base:3dfeb9a1278a0489cf08b7b6c2844963 .
+
+events:TXN000003 a events:SalesAggregation;
+  events:hasAmount 12828.25;
+  events:forStore core:S003;
+  events:aggregatesOn base:3dfeb9a1278a0489cf08b7b6c2844963 .
+
+events:TXN000004 a events:SalesAggregation;
+  events:hasAmount 15671.9;
+  events:forStore core:S004;
+  events:aggregatesOn base:3dfeb9a1278a0489cf08b7b6c2844963 .
+
+events:TXN000005 a events:SalesAggregation;
+  events:hasAmount 13325.02;
+  events:forStore core:S005;
+  events:aggregatesOn base:3dfeb9a1278a0489cf08b7b6c2844963 .
+
+events:TXN000006 a events:SalesAggregation;
+  events:hasAmount 10542.15;
+  events:forStore core:S001;
+  events:aggregatesOn base:0fbf49975ff4668115d260023dc2a0a9 .
+
+events:TXN000007 a events:SalesAggregation;
+  events:hasAmount 17494.8;
+  events:forStore core:S002;
+  events:aggregatesOn base:0fbf49975ff4668115d260023dc2a0a9 .
+
+events:TXN000008 a events:SalesAggregation;
+  events:hasAmount 11794.94;
+  events:forStore core:S003;
+  events:aggregatesOn base:0fbf49975ff4668115d260023dc2a0a9 .
+
+events:TXN000009 a events:SalesAggregation;
+  events:hasAmount 11875.18;
+  events:forStore core:S004;
+  events:aggregatesOn base:0fbf49975ff4668115d260023dc2a0a9 .
+
+events:TXN000010 a events:SalesAggregation;
+  events:hasAmount 14692.62;
+  events:forStore core:S005;
+  events:aggregatesOn base:0fbf49975ff4668115d260023dc2a0a9 .
+
+events:TXN000011 a events:SalesAggregation;
+  events:hasAmount 11760.64;
+  events:forStore core:S001;
+  events:aggregatesOn base:fdefd8cc22140ef060e884d11dca8527 .
+
+events:TXN000012 a events:SalesAggregation;
+  events:hasAmount 14335.33;
+  events:forStore core:S002;
+  events:aggregatesOn base:fdefd8cc22140ef060e884d11dca8527 .
+
+events:TXN000013 a events:SalesAggregation;
+  events:hasAmount 11813.2;
+  events:forStore core:S003;
+  events:aggregatesOn base:fdefd8cc22140ef060e884d11dca8527 .
+
+events:TXN000014 a events:SalesAggregation;
+  events:hasAmount 9871.27;
+  events:forStore core:S004;
+  events:aggregatesOn base:fdefd8cc22140ef060e884d11dca8527 .
+
+events:TXN000015 a events:SalesAggregation;
+  events:hasAmount 15960.64;
+  events:forStore core:S005;
+  events:aggregatesOn base:fdefd8cc22140ef060e884d11dca8527 .
+
+events:TXN000016 a events:SalesAggregation;
+  events:hasAmount 21598.9;
+  events:forStore core:S001;
+  events:aggregatesOn base:0ca5ef3da2d5dc0f73a09dc797a819e8 .
+
+events:TXN000017 a events:SalesAggregation;
+  events:hasAmount 18572.6;
+  events:forStore core:S002;
+  events:aggregatesOn base:0ca5ef3da2d5dc0f73a09dc797a819e8 .
+
+events:TXN000018 a events:SalesAggregation;
+  events:hasAmount 17593.51;
+  events:forStore core:S003;
+  events:aggregatesOn base:0ca5ef3da2d5dc0f73a09dc797a819e8 .
+
+events:TXN000019 a events:SalesAggregation;
+  events:hasAmount 20986.34;
+  events:forStore core:S004;
+  events:aggregatesOn base:0ca5ef3da2d5dc0f73a09dc797a819e8 .
+
+events:TXN000020 a events:SalesAggregation;
+  events:hasAmount 19392.89;
+  events:forStore core:S005;
+  events:aggregatesOn base:0ca5ef3da2d5dc0f73a09dc797a819e8 .
+
+events:TXN000021 a events:SalesAggregation;
+  events:hasAmount 23926.72;
+  events:forStore core:S001;
+  events:aggregatesOn base:c50e13521d483744fd3de2229d8d2f8b .
+
+events:TXN000022 a events:SalesAggregation;
+  events:hasAmount 21083.47;
+  events:forStore core:S002;
+  events:aggregatesOn base:c50e13521d483744fd3de2229d8d2f8b .
+
+events:TXN000023 a events:SalesAggregation;
+  events:hasAmount 17841.52;
+  events:forStore core:S003;
+  events:aggregatesOn base:c50e13521d483744fd3de2229d8d2f8b .
+
+events:TXN000024 a events:SalesAggregation;
+  events:hasAmount 13705.64;
+  events:forStore core:S004;
+  events:aggregatesOn base:c50e13521d483744fd3de2229d8d2f8b .
+
+events:TXN000025 a events:SalesAggregation;
+  events:hasAmount 22309.91;
+  events:forStore core:S005;
+  events:aggregatesOn base:c50e13521d483744fd3de2229d8d2f8b .
+
+events:TXN000026 a events:SalesAggregation;
+  events:hasAmount 13209.84;
+  events:forStore core:S001;
+  events:aggregatesOn base:ca6503589aa63efdfe870f8ae311b68d .
+
+events:TXN000027 a events:SalesAggregation;
+  events:hasAmount 18720.4;
+  events:forStore core:S002;
+  events:aggregatesOn base:ca6503589aa63efdfe870f8ae311b68d .
+
+events:TXN000028 a events:SalesAggregation;
+  events:hasAmount 10738.74;
+  events:forStore core:S003;
+  events:aggregatesOn base:ca6503589aa63efdfe870f8ae311b68d .
+
+events:TXN000029 a events:SalesAggregation;
+  events:hasAmount 12034.16;
+  events:forStore core:S004;
+  events:aggregatesOn base:ca6503589aa63efdfe870f8ae311b68d .
+
+events:TXN000030 a events:SalesAggregation;
+  events:hasAmount 14975.45;
+  events:forStore core:S005;
+  events:aggregatesOn base:ca6503589aa63efdfe870f8ae311b68d .
+
+events:TXN000031 a events:SalesAggregation;
+  events:hasAmount 14370.4;
+  events:forStore core:S001;
+  events:aggregatesOn base:359b0c959f665a7b3d54c3918d070030 .
+
+events:TXN000032 a events:SalesAggregation;
+  events:hasAmount 14034.15;
+  events:forStore core:S002;
+  events:aggregatesOn base:359b0c959f665a7b3d54c3918d070030 .
+
+events:TXN000033 a events:SalesAggregation;
+  events:hasAmount 14503.42;
+  events:forStore core:S003;
+  events:aggregatesOn base:359b0c959f665a7b3d54c3918d070030 .
+
+events:TXN000034 a events:SalesAggregation;
+  events:hasAmount 12786.55;
+  events:forStore core:S004;
+  events:aggregatesOn base:359b0c959f665a7b3d54c3918d070030 .
+
+events:TXN000035 a events:SalesAggregation;
+  events:hasAmount 15069.28;
+  events:forStore core:S005;
+  events:aggregatesOn base:359b0c959f665a7b3d54c3918d070030 .
+
+events:TXN000036 a events:SalesAggregation;
+  events:hasAmount 14631.78;
+  events:forStore core:S001;
+  events:aggregatesOn base:3d8921a4858d8267c7aaacd5a49a1461 .
+
+events:TXN000037 a events:SalesAggregation;
+  events:hasAmount 14074.28;
+  events:forStore core:S002;
+  events:aggregatesOn base:3d8921a4858d8267c7aaacd5a49a1461 .
+
+events:TXN000038 a events:SalesAggregation;
+  events:hasAmount 11952.04;
+  events:forStore core:S003;
+  events:aggregatesOn base:3d8921a4858d8267c7aaacd5a49a1461 .
+
+events:TXN000039 a events:SalesAggregation;
+  events:hasAmount 12670.99;
+  events:forStore core:S004;
+  events:aggregatesOn base:3d8921a4858d8267c7aaacd5a49a1461 .
+
+events:TXN000040 a events:SalesAggregation;
+  events:hasAmount 18545.64;
+  events:forStore core:S005;
+  events:aggregatesOn base:3d8921a4858d8267c7aaacd5a49a1461 .
+
+events:TXN000041 a events:SalesAggregation;
+  events:hasAmount 10800.36;
+  events:forStore core:S001;
+  events:aggregatesOn base:2285687869c54fdd9d23f3ce4d90ab1a .
+
+events:TXN000042 a events:SalesAggregation;
+  events:hasAmount 17507.97;
+  events:forStore core:S002;
+  events:aggregatesOn base:2285687869c54fdd9d23f3ce4d90ab1a .
+
+events:TXN000043 a events:SalesAggregation;
+  events:hasAmount 11089.71;
+  events:forStore core:S003;
+  events:aggregatesOn base:2285687869c54fdd9d23f3ce4d90ab1a .
+
+events:TXN000044 a events:SalesAggregation;
+  events:hasAmount 11093.25;
+  events:forStore core:S004;
+  events:aggregatesOn base:2285687869c54fdd9d23f3ce4d90ab1a .
+
+events:TXN000045 a events:SalesAggregation;
+  events:hasAmount 20096.13;
+  events:forStore core:S005;
+  events:aggregatesOn base:2285687869c54fdd9d23f3ce4d90ab1a .
+
+events:TXN000046 a events:SalesAggregation;
+  events:hasAmount 15610.28;
+  events:forStore core:S001;
+  events:aggregatesOn base:b577c30749d6cd1bbe0858a1298c0395 .
+
+events:TXN000047 a events:SalesAggregation;
+  events:hasAmount 11359.36;
+  events:forStore core:S002;
+  events:aggregatesOn base:b577c30749d6cd1bbe0858a1298c0395 .
+
+events:TXN000048 a events:SalesAggregation;
+  events:hasAmount 10683.57;
+  events:forStore core:S003;
+  events:aggregatesOn base:b577c30749d6cd1bbe0858a1298c0395 .
+
+events:TXN000049 a events:SalesAggregation;
+  events:hasAmount 9797.9;
+  events:forStore core:S004;
+  events:aggregatesOn base:b577c30749d6cd1bbe0858a1298c0395 .
+
+events:TXN000050 a events:SalesAggregation;
+  events:hasAmount 12604.3;
+  events:forStore core:S005;
+  events:aggregatesOn base:b577c30749d6cd1bbe0858a1298c0395 .
+
+events:TXN000051 a events:SalesAggregation;
+  events:hasAmount 14428.97;
+  events:forStore core:S001;
+  events:aggregatesOn base:2b30f411779ec8798bd918cd9ba02d35 .
+
+events:TXN000052 a events:SalesAggregation;
+  events:hasAmount 16988.6;
+  events:forStore core:S002;
+  events:aggregatesOn base:2b30f411779ec8798bd918cd9ba02d35 .
+
+events:TXN000053 a events:SalesAggregation;
+  events:hasAmount 16211.69;
+  events:forStore core:S003;
+  events:aggregatesOn base:2b30f411779ec8798bd918cd9ba02d35 .
+
+events:TXN000054 a events:SalesAggregation;
+  events:hasAmount 17420.1;
+  events:forStore core:S004;
+  events:aggregatesOn base:2b30f411779ec8798bd918cd9ba02d35 .
+
+events:TXN000055 a events:SalesAggregation;
+  events:hasAmount 29101.81;
+  events:forStore core:S005;
+  events:aggregatesOn base:2b30f411779ec8798bd918cd9ba02d35 .
+
+events:TXN000056 a events:SalesAggregation;
+  events:hasAmount 19683.57;
+  events:forStore core:S001;
+  events:aggregatesOn base:2fdc466b5e776cd432405bd2c3bfb553 .
+
+events:TXN000057 a events:SalesAggregation;
+  events:hasAmount 18576.2;
+  events:forStore core:S002;
+  events:aggregatesOn base:2fdc466b5e776cd432405bd2c3bfb553 .
+
+events:TXN000058 a events:SalesAggregation;
+  events:hasAmount 15560.67;
+  events:forStore core:S003;
+  events:aggregatesOn base:2fdc466b5e776cd432405bd2c3bfb553 .
+
+events:TXN000059 a events:SalesAggregation;
+  events:hasAmount 19616.92;
+  events:forStore core:S004;
+  events:aggregatesOn base:2fdc466b5e776cd432405bd2c3bfb553 .
+
+events:TXN000060 a events:SalesAggregation;
+  events:hasAmount 20902.51;
+  events:forStore core:S005;
+  events:aggregatesOn base:2fdc466b5e776cd432405bd2c3bfb553 .
+
+events:TXN000061 a events:SalesAggregation;
+  events:hasAmount 12103.37;
+  events:forStore core:S001;
+  events:aggregatesOn base:00d605bd5cc0e787001f985d5c0b5201 .
+
+events:TXN000062 a events:SalesAggregation;
+  events:hasAmount 13899.95;
+  events:forStore core:S002;
+  events:aggregatesOn base:00d605bd5cc0e787001f985d5c0b5201 .
+
+events:TXN000063 a events:SalesAggregation;
+  events:hasAmount 8305.71;
+  events:forStore core:S003;
+  events:aggregatesOn base:00d605bd5cc0e787001f985d5c0b5201 .
+
+events:TXN000064 a events:SalesAggregation;
+  events:hasAmount 15058.1;
+  events:forStore core:S004;
+  events:aggregatesOn base:00d605bd5cc0e787001f985d5c0b5201 .
+
+events:TXN000065 a events:SalesAggregation;
+  events:hasAmount 18380.8;
+  events:forStore core:S005;
+  events:aggregatesOn base:00d605bd5cc0e787001f985d5c0b5201 .
+
+events:TXN000066 a events:SalesAggregation;
+  events:hasAmount 9114.97;
+  events:forStore core:S001;
+  events:aggregatesOn base:ca7c87209cd064a8077fd2ab7116d48a .
+
+events:TXN000067 a events:SalesAggregation;
+  events:hasAmount 13391.01;
+  events:forStore core:S002;
+  events:aggregatesOn base:ca7c87209cd064a8077fd2ab7116d48a .
+
+events:TXN000068 a events:SalesAggregation;
+  events:hasAmount 12267.78;
+  events:forStore core:S003;
+  events:aggregatesOn base:ca7c87209cd064a8077fd2ab7116d48a .
+
+events:TXN000069 a events:SalesAggregation;
+  events:hasAmount 11556.77;
+  events:forStore core:S004;
+  events:aggregatesOn base:ca7c87209cd064a8077fd2ab7116d48a .
+
+events:TXN000070 a events:SalesAggregation;
+  events:hasAmount 16353.91;
+  events:forStore core:S005;
+  events:aggregatesOn base:ca7c87209cd064a8077fd2ab7116d48a .
+
+events:TXN000071 a events:SalesAggregation;
+  events:hasAmount 15525.12;
+  events:forStore core:S001;
+  events:aggregatesOn base:14535b4b322865943ac2ee2f4e8fca6b .
+
+events:TXN000072 a events:SalesAggregation;
+  events:hasAmount 16560.2;
+  events:forStore core:S002;
+  events:aggregatesOn base:14535b4b322865943ac2ee2f4e8fca6b .
+
+events:TXN000073 a events:SalesAggregation;
+  events:hasAmount 11390.03;
+  events:forStore core:S003;
+  events:aggregatesOn base:14535b4b322865943ac2ee2f4e8fca6b .
+
+events:TXN000074 a events:SalesAggregation;
+  events:hasAmount 13784.66;
+  events:forStore core:S004;
+  events:aggregatesOn base:14535b4b322865943ac2ee2f4e8fca6b .
+
+events:TXN000075 a events:SalesAggregation;
+  events:hasAmount 19140.76;
+  events:forStore core:S005;
+  events:aggregatesOn base:14535b4b322865943ac2ee2f4e8fca6b .
+
+events:TXN000076 a events:SalesAggregation;
+  events:hasAmount 14416.98;
+  events:forStore core:S001;
+  events:aggregatesOn base:5afb51ef4f82fd8dc7ebdd886975e661 .
+
+events:TXN000077 a events:SalesAggregation;
+  events:hasAmount 16342.81;
+  events:forStore core:S002;
+  events:aggregatesOn base:5afb51ef4f82fd8dc7ebdd886975e661 .
+
+events:TXN000078 a events:SalesAggregation;
+  events:hasAmount 9827.13;
+  events:forStore core:S003;
+  events:aggregatesOn base:5afb51ef4f82fd8dc7ebdd886975e661 .
+
+events:TXN000079 a events:SalesAggregation;
+  events:hasAmount 14299.67;
+  events:forStore core:S004;
+  events:aggregatesOn base:5afb51ef4f82fd8dc7ebdd886975e661 .
+
+events:TXN000080 a events:SalesAggregation;
+  events:hasAmount 17794.94;
+  events:forStore core:S005;
+  events:aggregatesOn base:5afb51ef4f82fd8dc7ebdd886975e661 .
+
+events:TXN000081 a events:SalesAggregation;
+  events:hasAmount 10693.46;
+  events:forStore core:S001;
+  events:aggregatesOn base:ade91b99c53d6e0aec6f066a3f864a28 .
+
+events:TXN000082 a events:SalesAggregation;
+  events:hasAmount 13052.2;
+  events:forStore core:S002;
+  events:aggregatesOn base:ade91b99c53d6e0aec6f066a3f864a28 .
+
+events:TXN000083 a events:SalesAggregation;
+  events:hasAmount 11193.05;
+  events:forStore core:S003;
+  events:aggregatesOn base:ade91b99c53d6e0aec6f066a3f864a28 .
+
+events:TXN000084 a events:SalesAggregation;
+  events:hasAmount 14105.57;
+  events:forStore core:S004;
+  events:aggregatesOn base:ade91b99c53d6e0aec6f066a3f864a28 .
+
+events:TXN000085 a events:SalesAggregation;
+  events:hasAmount 16268.41;
+  events:forStore core:S005;
+  events:aggregatesOn base:ade91b99c53d6e0aec6f066a3f864a28 .
+
+events:TXN000086 a events:SalesAggregation;
+  events:hasAmount 15537.32;
+  events:forStore core:S001;
+  events:aggregatesOn base:20f6a17b4a46bafd901602911acd1159 .
+
+events:TXN000087 a events:SalesAggregation;
+  events:hasAmount 21849.04;
+  events:forStore core:S002;
+  events:aggregatesOn base:20f6a17b4a46bafd901602911acd1159 .
+
+events:TXN000088 a events:SalesAggregation;
+  events:hasAmount 17390.83;
+  events:forStore core:S003;
+  events:aggregatesOn base:20f6a17b4a46bafd901602911acd1159 .
+
+events:TXN000089 a events:SalesAggregation;
+  events:hasAmount 15080.06;
+  events:forStore core:S004;
+  events:aggregatesOn base:20f6a17b4a46bafd901602911acd1159 .
+
+events:TXN000090 a events:SalesAggregation;
+  events:hasAmount 22177.95;
+  events:forStore core:S005;
+  events:aggregatesOn base:20f6a17b4a46bafd901602911acd1159 .
+
+events:TXN000091 a events:SalesAggregation;
+  events:hasAmount 18366.17;
+  events:forStore core:S001;
+  events:aggregatesOn base:b325ec1c7ed8eda27fa773daf5ccf33a .
+
+events:TXN000092 a events:SalesAggregation;
+  events:hasAmount 23728.15;
+  events:forStore core:S002;
+  events:aggregatesOn base:b325ec1c7ed8eda27fa773daf5ccf33a .
+
+events:TXN000093 a events:SalesAggregation;
+  events:hasAmount 18221.89;
+  events:forStore core:S003;
+  events:aggregatesOn base:b325ec1c7ed8eda27fa773daf5ccf33a .
+
+events:TXN000094 a events:SalesAggregation;
+  events:hasAmount 19030.8;
+  events:forStore core:S004;
+  events:aggregatesOn base:b325ec1c7ed8eda27fa773daf5ccf33a .
+
+events:TXN000095 a events:SalesAggregation;
+  events:hasAmount 23970.05;
+  events:forStore core:S005;
+  events:aggregatesOn base:b325ec1c7ed8eda27fa773daf5ccf33a .
+
+events:TXN000096 a events:SalesAggregation;
+  events:hasAmount 16270.46;
+  events:forStore core:S001;
+  events:aggregatesOn base:d365c6114b0db9bd28c58e7e9d6b9231 .
+
+events:TXN000097 a events:SalesAggregation;
+  events:hasAmount 15688.24;
+  events:forStore core:S002;
+  events:aggregatesOn base:d365c6114b0db9bd28c58e7e9d6b9231 .
+
+events:TXN000098 a events:SalesAggregation;
+  events:hasAmount 7941.89;
+  events:forStore core:S003;
+  events:aggregatesOn base:d365c6114b0db9bd28c58e7e9d6b9231 .
+
+events:TXN000099 a events:SalesAggregation;
+  events:hasAmount 13397.28;
+  events:forStore core:S004;
+  events:aggregatesOn base:d365c6114b0db9bd28c58e7e9d6b9231 .
+
+events:TXN000100 a events:SalesAggregation;
+  events:hasAmount 12610.33;
+  events:forStore core:S005;
+  events:aggregatesOn base:d365c6114b0db9bd28c58e7e9d6b9231 .
+
+events:TXN000101 a events:SalesAggregation;
+  events:hasAmount 11983.55;
+  events:forStore core:S001;
+  events:aggregatesOn base:ac57a873f23e6ace339de270e116a70a .
+
+events:TXN000102 a events:SalesAggregation;
+  events:hasAmount 16024.42;
+  events:forStore core:S002;
+  events:aggregatesOn base:ac57a873f23e6ace339de270e116a70a .
+
+events:TXN000103 a events:SalesAggregation;
+  events:hasAmount 8571.55;
+  events:forStore core:S003;
+  events:aggregatesOn base:ac57a873f23e6ace339de270e116a70a .
+
+events:TXN000104 a events:SalesAggregation;
+  events:hasAmount 10315.3;
+  events:forStore core:S004;
+  events:aggregatesOn base:ac57a873f23e6ace339de270e116a70a .
+
+events:TXN000105 a events:SalesAggregation;
+  events:hasAmount 17070.64;
+  events:forStore core:S005;
+  events:aggregatesOn base:ac57a873f23e6ace339de270e116a70a .
+
+events:TXN000106 a events:SalesAggregation;
+  events:hasAmount 15858.9;
+  events:forStore core:S001;
+  events:aggregatesOn base:be1259ffc7047b60de677699419ccccf .
+
+events:TXN000107 a events:SalesAggregation;
+  events:hasAmount 13092.66;
+  events:forStore core:S002;
+  events:aggregatesOn base:be1259ffc7047b60de677699419ccccf .
+
+events:TXN000108 a events:SalesAggregation;
+  events:hasAmount 10665.98;
+  events:forStore core:S003;
+  events:aggregatesOn base:be1259ffc7047b60de677699419ccccf .
+
+events:TXN000109 a events:SalesAggregation;
+  events:hasAmount 11277.41;
+  events:forStore core:S004;
+  events:aggregatesOn base:be1259ffc7047b60de677699419ccccf .
+
+events:TXN000110 a events:SalesAggregation;
+  events:hasAmount 14319.01;
+  events:forStore core:S005;
+  events:aggregatesOn base:be1259ffc7047b60de677699419ccccf .
+
+events:TXN000111 a events:SalesAggregation;
+  events:hasAmount 9922.83;
+  events:forStore core:S001;
+  events:aggregatesOn base:be60d5acf94273e503e12944ba730d51 .
+
+events:TXN000112 a events:SalesAggregation;
+  events:hasAmount 12836.31;
+  events:forStore core:S002;
+  events:aggregatesOn base:be60d5acf94273e503e12944ba730d51 .
+
+events:TXN000113 a events:SalesAggregation;
+  events:hasAmount 14385.61;
+  events:forStore core:S003;
+  events:aggregatesOn base:be60d5acf94273e503e12944ba730d51 .
+
+events:TXN000114 a events:SalesAggregation;
+  events:hasAmount 12642.17;
+  events:forStore core:S004;
+  events:aggregatesOn base:be60d5acf94273e503e12944ba730d51 .
+
+events:TXN000115 a events:SalesAggregation;
+  events:hasAmount 14738.5;
+  events:forStore core:S005;
+  events:aggregatesOn base:be60d5acf94273e503e12944ba730d51 .
+
+events:TXN000116 a events:SalesAggregation;
+  events:hasAmount 11886.55;
+  events:forStore core:S001;
+  events:aggregatesOn base:add7afc2829897f2a75a6af30a73209c .
+
+events:TXN000117 a events:SalesAggregation;
+  events:hasAmount 12728.12;
+  events:forStore core:S002;
+  events:aggregatesOn base:add7afc2829897f2a75a6af30a73209c .
+
+events:TXN000118 a events:SalesAggregation;
+  events:hasAmount 8266.09;
+  events:forStore core:S003;
+  events:aggregatesOn base:add7afc2829897f2a75a6af30a73209c .
+
+events:TXN000119 a events:SalesAggregation;
+  events:hasAmount 16308.56;
+  events:forStore core:S004;
+  events:aggregatesOn base:add7afc2829897f2a75a6af30a73209c .
+
+events:TXN000120 a events:SalesAggregation;
+  events:hasAmount 16084.29;
+  events:forStore core:S005;
+  events:aggregatesOn base:add7afc2829897f2a75a6af30a73209c .
+
+events:TXN000121 a events:SalesAggregation;
+  events:hasAmount 17222.25;
+  events:forStore core:S001;
+  events:aggregatesOn base:657c1b48dcdc964fa5ccceb8c78cb520 .
+
+events:TXN000122 a events:SalesAggregation;
+  events:hasAmount 17898.82;
+  events:forStore core:S002;
+  events:aggregatesOn base:657c1b48dcdc964fa5ccceb8c78cb520 .
+
+events:TXN000123 a events:SalesAggregation;
+  events:hasAmount 17370.69;
+  events:forStore core:S003;
+  events:aggregatesOn base:657c1b48dcdc964fa5ccceb8c78cb520 .
+
+events:TXN000124 a events:SalesAggregation;
+  events:hasAmount 19702.56;
+  events:forStore core:S004;
+  events:aggregatesOn base:657c1b48dcdc964fa5ccceb8c78cb520 .
+
+events:TXN000125 a events:SalesAggregation;
+  events:hasAmount 19142.22;
+  events:forStore core:S005;
+  events:aggregatesOn base:657c1b48dcdc964fa5ccceb8c78cb520 .
+
+events:TXN000126 a events:SalesAggregation;
+  events:hasAmount 17347.66;
+  events:forStore core:S001;
+  events:aggregatesOn base:40078c8cb5fab91df4315ede5c878ae1 .
+
+events:TXN000127 a events:SalesAggregation;
+  events:hasAmount 14531.23;
+  events:forStore core:S002;
+  events:aggregatesOn base:40078c8cb5fab91df4315ede5c878ae1 .
+
+events:TXN000128 a events:SalesAggregation;
+  events:hasAmount 14954.68;
+  events:forStore core:S003;
+  events:aggregatesOn base:40078c8cb5fab91df4315ede5c878ae1 .
+
+events:TXN000129 a events:SalesAggregation;
+  events:hasAmount 13022.21;
+  events:forStore core:S004;
+  events:aggregatesOn base:40078c8cb5fab91df4315ede5c878ae1 .
+
+events:TXN000130 a events:SalesAggregation;
+  events:hasAmount 18352.43;
+  events:forStore core:S005;
+  events:aggregatesOn base:40078c8cb5fab91df4315ede5c878ae1 .
+
+events:TXN000131 a events:SalesAggregation;
+  events:hasAmount 14811.11;
+  events:forStore core:S001;
+  events:aggregatesOn base:8aa5c9ae2a8ec2f7abd70533727da835 .
+
+events:TXN000132 a events:SalesAggregation;
+  events:hasAmount 11353.03;
+  events:forStore core:S002;
+  events:aggregatesOn base:8aa5c9ae2a8ec2f7abd70533727da835 .
+
+events:TXN000133 a events:SalesAggregation;
+  events:hasAmount 13905.84;
+  events:forStore core:S003;
+  events:aggregatesOn base:8aa5c9ae2a8ec2f7abd70533727da835 .
+
+events:TXN000134 a events:SalesAggregation;
+  events:hasAmount 12106.21;
+  events:forStore core:S004;
+  events:aggregatesOn base:8aa5c9ae2a8ec2f7abd70533727da835 .
+
+events:TXN000135 a events:SalesAggregation;
+  events:hasAmount 14539.84;
+  events:forStore core:S005;
+  events:aggregatesOn base:8aa5c9ae2a8ec2f7abd70533727da835 .
+
+events:TXN000136 a events:SalesAggregation;
+  events:hasAmount 12298.28;
+  events:forStore core:S001;
+  events:aggregatesOn base:528c065349d1db8dbb55d8b43f91c1c2 .
+
+events:TXN000137 a events:SalesAggregation;
+  events:hasAmount 14588.91;
+  events:forStore core:S002;
+  events:aggregatesOn base:528c065349d1db8dbb55d8b43f91c1c2 .
+
+events:TXN000138 a events:SalesAggregation;
+  events:hasAmount 9640.94;
+  events:forStore core:S003;
+  events:aggregatesOn base:528c065349d1db8dbb55d8b43f91c1c2 .
+
+events:TXN000139 a events:SalesAggregation;
+  events:hasAmount 16933.21;
+  events:forStore core:S004;
+  events:aggregatesOn base:528c065349d1db8dbb55d8b43f91c1c2 .
+
+events:TXN000140 a events:SalesAggregation;
+  events:hasAmount 12076.13;
+  events:forStore core:S005;
+  events:aggregatesOn base:528c065349d1db8dbb55d8b43f91c1c2 .
+
+events:TXN000141 a events:SalesAggregation;
+  events:hasAmount 9456.16;
+  events:forStore core:S001;
+  events:aggregatesOn base:3577771fd8764e951b250b8657a0bf88 .
+
+events:TXN000142 a events:SalesAggregation;
+  events:hasAmount 11172.1;
+  events:forStore core:S002;
+  events:aggregatesOn base:3577771fd8764e951b250b8657a0bf88 .
+
+events:TXN000143 a events:SalesAggregation;
+  events:hasAmount 10880.32;
+  events:forStore core:S003;
+  events:aggregatesOn base:3577771fd8764e951b250b8657a0bf88 .
+
+events:TXN000144 a events:SalesAggregation;
+  events:hasAmount 13197.26;
+  events:forStore core:S004;
+  events:aggregatesOn base:3577771fd8764e951b250b8657a0bf88 .
+
+events:TXN000145 a events:SalesAggregation;
+  events:hasAmount 15933.6;
+  events:forStore core:S005;
+  events:aggregatesOn base:3577771fd8764e951b250b8657a0bf88 .
+
+events:TXN000146 a events:SalesAggregation;
+  events:hasAmount 9396.44;
+  events:forStore core:S001;
+  events:aggregatesOn base:97239cc99b9fb354149be2696a045c0c .
+
+events:TXN000147 a events:SalesAggregation;
+  events:hasAmount 15488.75;
+  events:forStore core:S002;
+  events:aggregatesOn base:97239cc99b9fb354149be2696a045c0c .
+
+events:TXN000148 a events:SalesAggregation;
+  events:hasAmount 12309.19;
+  events:forStore core:S003;
+  events:aggregatesOn base:97239cc99b9fb354149be2696a045c0c .
+
+events:TXN000149 a events:SalesAggregation;
+  events:hasAmount 12137.3;
+  events:forStore core:S004;
+  events:aggregatesOn base:97239cc99b9fb354149be2696a045c0c .
+
+events:TXN000150 a events:SalesAggregation;
+  events:hasAmount 16315.86;
+  events:forStore core:S005;
+  events:aggregatesOn base:97239cc99b9fb354149be2696a045c0c .
+
+events:TXN000151 a events:SalesAggregation;
+  events:hasAmount 15946.46;
+  events:forStore core:S001;
+  events:aggregatesOn base:51fcad48f76a22206b5b5e1dd5df4507 .
+
+events:TXN000152 a events:SalesAggregation;
+  events:hasAmount 15355.22;
+  events:forStore core:S002;
+  events:aggregatesOn base:51fcad48f76a22206b5b5e1dd5df4507 .
+
+events:TXN000153 a events:SalesAggregation;
+  events:hasAmount 8236.44;
+  events:forStore core:S003;
+  events:aggregatesOn base:51fcad48f76a22206b5b5e1dd5df4507 .
+
+events:TXN000154 a events:SalesAggregation;
+  events:hasAmount 14452.32;
+  events:forStore core:S004;
+  events:aggregatesOn base:51fcad48f76a22206b5b5e1dd5df4507 .
+
+events:TXN000155 a events:SalesAggregation;
+  events:hasAmount 15977.22;
+  events:forStore core:S005;
+  events:aggregatesOn base:51fcad48f76a22206b5b5e1dd5df4507 .
+
+events:TXN000156 a events:SalesAggregation;
+  events:hasAmount 19244.6;
+  events:forStore core:S001;
+  events:aggregatesOn base:1b86d535c6882b0f1896344e5008658d .
+
+events:TXN000157 a events:SalesAggregation;
+  events:hasAmount 21446.49;
+  events:forStore core:S002;
+  events:aggregatesOn base:1b86d535c6882b0f1896344e5008658d .
+
+events:TXN000158 a events:SalesAggregation;
+  events:hasAmount 18325.31;
+  events:forStore core:S003;
+  events:aggregatesOn base:1b86d535c6882b0f1896344e5008658d .
+
+events:TXN000159 a events:SalesAggregation;
+  events:hasAmount 21126.06;
+  events:forStore core:S004;
+  events:aggregatesOn base:1b86d535c6882b0f1896344e5008658d .
+
+events:TXN000160 a events:SalesAggregation;
+  events:hasAmount 28451.43;
+  events:forStore core:S005;
+  events:aggregatesOn base:1b86d535c6882b0f1896344e5008658d .
+
+events:TXN000161 a events:SalesAggregation;
+  events:hasAmount 16871.16;
+  events:forStore core:S001;
+  events:aggregatesOn base:3cd770bc1032e2226464f80e4093d560 .
+
+events:TXN000162 a events:SalesAggregation;
+  events:hasAmount 21732.04;
+  events:forStore core:S002;
+  events:aggregatesOn base:3cd770bc1032e2226464f80e4093d560 .
+
+events:TXN000163 a events:SalesAggregation;
+  events:hasAmount 17065.32;
+  events:forStore core:S003;
+  events:aggregatesOn base:3cd770bc1032e2226464f80e4093d560 .
+
+events:TXN000164 a events:SalesAggregation;
+  events:hasAmount 18907.66;
+  events:forStore core:S004;
+  events:aggregatesOn base:3cd770bc1032e2226464f80e4093d560 .
+
+events:TXN000165 a events:SalesAggregation;
+  events:hasAmount 18181.06;
+  events:forStore core:S005;
+  events:aggregatesOn base:3cd770bc1032e2226464f80e4093d560 .
+
+events:TXN000166 a events:SalesAggregation;
+  events:hasAmount 11798.73;
+  events:forStore core:S001;
+  events:aggregatesOn base:ca385f8a90dc256c71e43f23f9b870f2 .
+
+events:TXN000167 a events:SalesAggregation;
+  events:hasAmount 14306.25;
+  events:forStore core:S002;
+  events:aggregatesOn base:ca385f8a90dc256c71e43f23f9b870f2 .
+
+events:TXN000168 a events:SalesAggregation;
+  events:hasAmount 12372.54;
+  events:forStore core:S003;
+  events:aggregatesOn base:ca385f8a90dc256c71e43f23f9b870f2 .
+
+events:TXN000169 a events:SalesAggregation;
+  events:hasAmount 14583.54;
+  events:forStore core:S004;
+  events:aggregatesOn base:ca385f8a90dc256c71e43f23f9b870f2 .
+
+events:TXN000170 a events:SalesAggregation;
+  events:hasAmount 19839.32;
+  events:forStore core:S005;
+  events:aggregatesOn base:ca385f8a90dc256c71e43f23f9b870f2 .
+
+events:TXN000171 a events:SalesAggregation;
+  events:hasAmount 13049.31;
+  events:forStore core:S001;
+  events:aggregatesOn base:9b86bf666af0974ec7532ac0aee5072f .
+
+events:TXN000172 a events:SalesAggregation;
+  events:hasAmount 15883.46;
+  events:forStore core:S002;
+  events:aggregatesOn base:9b86bf666af0974ec7532ac0aee5072f .
+
+events:TXN000173 a events:SalesAggregation;
+  events:hasAmount 8989.83;
+  events:forStore core:S003;
+  events:aggregatesOn base:9b86bf666af0974ec7532ac0aee5072f .
+
+events:TXN000174 a events:SalesAggregation;
+  events:hasAmount 14265.81;
+  events:forStore core:S004;
+  events:aggregatesOn base:9b86bf666af0974ec7532ac0aee5072f .
+
+events:TXN000175 a events:SalesAggregation;
+  events:hasAmount 15277.53;
+  events:forStore core:S005;
+  events:aggregatesOn base:9b86bf666af0974ec7532ac0aee5072f .
+
+events:TXN000176 a events:SalesAggregation;
+  events:hasAmount 12784.8;
+  events:forStore core:S001;
+  events:aggregatesOn base:55ac7856557b16dc32a22e2e9104c331 .
+
+events:TXN000177 a events:SalesAggregation;
+  events:hasAmount 16272.47;
+  events:forStore core:S002;
+  events:aggregatesOn base:55ac7856557b16dc32a22e2e9104c331 .
+
+events:TXN000178 a events:SalesAggregation;
+  events:hasAmount 10703.75;
+  events:forStore core:S003;
+  events:aggregatesOn base:55ac7856557b16dc32a22e2e9104c331 .
+
+events:TXN000179 a events:SalesAggregation;
+  events:hasAmount 17002.66;
+  events:forStore core:S004;
+  events:aggregatesOn base:55ac7856557b16dc32a22e2e9104c331 .
+
+events:TXN000180 a events:SalesAggregation;
+  events:hasAmount 13547.35;
+  events:forStore core:S005;
+  events:aggregatesOn base:55ac7856557b16dc32a22e2e9104c331 .
+
+events:TXN000181 a events:SalesAggregation;
+  events:hasAmount 13468.01;
+  events:forStore core:S001;
+  events:aggregatesOn base:e9598d5e9a5569d14b08ccf7529f85fa .
+
+events:TXN000182 a events:SalesAggregation;
+  events:hasAmount 16700.9;
+  events:forStore core:S002;
+  events:aggregatesOn base:e9598d5e9a5569d14b08ccf7529f85fa .
+
+events:TXN000183 a events:SalesAggregation;
+  events:hasAmount 11197.25;
+  events:forStore core:S003;
+  events:aggregatesOn base:e9598d5e9a5569d14b08ccf7529f85fa .
+
+events:TXN000184 a events:SalesAggregation;
+  events:hasAmount 12619.06;
+  events:forStore core:S004;
+  events:aggregatesOn base:e9598d5e9a5569d14b08ccf7529f85fa .
+
+events:TXN000185 a events:SalesAggregation;
+  events:hasAmount 17913.71;
+  events:forStore core:S005;
+  events:aggregatesOn base:e9598d5e9a5569d14b08ccf7529f85fa .
+
+events:TXN000186 a events:SalesAggregation;
+  events:hasAmount 11080.1;
+  events:forStore core:S001;
+  events:aggregatesOn base:723995a6f3cb2063af867a2c518727bf .
+
+events:TXN000187 a events:SalesAggregation;
+  events:hasAmount 15902.27;
+  events:forStore core:S002;
+  events:aggregatesOn base:723995a6f3cb2063af867a2c518727bf .
+
+events:TXN000188 a events:SalesAggregation;
+  events:hasAmount 13952.82;
+  events:forStore core:S003;
+  events:aggregatesOn base:723995a6f3cb2063af867a2c518727bf .
+
+events:TXN000189 a events:SalesAggregation;
+  events:hasAmount 12659.17;
+  events:forStore core:S004;
+  events:aggregatesOn base:723995a6f3cb2063af867a2c518727bf .
+
+events:TXN000190 a events:SalesAggregation;
+  events:hasAmount 11837.81;
+  events:forStore core:S005;
+  events:aggregatesOn base:723995a6f3cb2063af867a2c518727bf .
+
+events:TXN000191 a events:SalesAggregation;
+  events:hasAmount 18134.31;
+  events:forStore core:S001;
+  events:aggregatesOn base:f1e97fa3005ee6331d67ab51789d92f9 .
+
+events:TXN000192 a events:SalesAggregation;
+  events:hasAmount 20811.41;
+  events:forStore core:S002;
+  events:aggregatesOn base:f1e97fa3005ee6331d67ab51789d92f9 .
+
+events:TXN000193 a events:SalesAggregation;
+  events:hasAmount 16173.19;
+  events:forStore core:S003;
+  events:aggregatesOn base:f1e97fa3005ee6331d67ab51789d92f9 .
+
+events:TXN000194 a events:SalesAggregation;
+  events:hasAmount 20256.31;
+  events:forStore core:S004;
+  events:aggregatesOn base:f1e97fa3005ee6331d67ab51789d92f9 .
+
+events:TXN000195 a events:SalesAggregation;
+  events:hasAmount 23980.61;
+  events:forStore core:S005;
+  events:aggregatesOn base:f1e97fa3005ee6331d67ab51789d92f9 .
+
+events:TXN000196 a events:SalesAggregation;
+  events:hasAmount 18342.79;
+  events:forStore core:S001;
+  events:aggregatesOn base:63fcc38e24b9d4b61d9b74dd7dde8b7a .
+
+events:TXN000197 a events:SalesAggregation;
+  events:hasAmount 14378.48;
+  events:forStore core:S002;
+  events:aggregatesOn base:63fcc38e24b9d4b61d9b74dd7dde8b7a .
+
+events:TXN000198 a events:SalesAggregation;
+  events:hasAmount 16823.19;
+  events:forStore core:S003;
+  events:aggregatesOn base:63fcc38e24b9d4b61d9b74dd7dde8b7a .
+
+events:TXN000199 a events:SalesAggregation;
+  events:hasAmount 12734.73;
+  events:forStore core:S004;
+  events:aggregatesOn base:63fcc38e24b9d4b61d9b74dd7dde8b7a .
+
+events:TXN000200 a events:SalesAggregation;
+  events:hasAmount 19113.04;
+  events:forStore core:S005;
+  events:aggregatesOn base:63fcc38e24b9d4b61d9b74dd7dde8b7a .
+
+events:TXN000201 a events:SalesAggregation;
+  events:hasAmount 12051.06;
+  events:forStore core:S001;
+  events:aggregatesOn base:9f2c6c1aff726f040695dfeb1c049cd7 .
+
+events:TXN000202 a events:SalesAggregation;
+  events:hasAmount 17368.21;
+  events:forStore core:S002;
+  events:aggregatesOn base:9f2c6c1aff726f040695dfeb1c049cd7 .
+
+events:TXN000203 a events:SalesAggregation;
+  events:hasAmount 12372.86;
+  events:forStore core:S003;
+  events:aggregatesOn base:9f2c6c1aff726f040695dfeb1c049cd7 .
+
+events:TXN000204 a events:SalesAggregation;
+  events:hasAmount 10430.82;
+  events:forStore core:S004;
+  events:aggregatesOn base:9f2c6c1aff726f040695dfeb1c049cd7 .
+
+events:TXN000205 a events:SalesAggregation;
+  events:hasAmount 18890.07;
+  events:forStore core:S005;
+  events:aggregatesOn base:9f2c6c1aff726f040695dfeb1c049cd7 .
+
+events:TXN000206 a events:SalesAggregation;
+  events:hasAmount 12844.62;
+  events:forStore core:S001;
+  events:aggregatesOn base:f462230f4e4289784e8469f2babda8fd .
+
+events:TXN000207 a events:SalesAggregation;
+  events:hasAmount 16365.33;
+  events:forStore core:S002;
+  events:aggregatesOn base:f462230f4e4289784e8469f2babda8fd .
+
+events:TXN000208 a events:SalesAggregation;
+  events:hasAmount 12275.33;
+  events:forStore core:S003;
+  events:aggregatesOn base:f462230f4e4289784e8469f2babda8fd .
+
+events:TXN000209 a events:SalesAggregation;
+  events:hasAmount 12832.06;
+  events:forStore core:S004;
+  events:aggregatesOn base:f462230f4e4289784e8469f2babda8fd .
+
+events:TXN000210 a events:SalesAggregation;
+  events:hasAmount 20808.45;
+  events:forStore core:S005;
+  events:aggregatesOn base:f462230f4e4289784e8469f2babda8fd .
+
+events:TXN000211 a events:SalesAggregation;
+  events:hasAmount 13537.64;
+  events:forStore core:S001;
+  events:aggregatesOn base:094b47b310938db661f77b9e561ff688 .
+
+events:TXN000212 a events:SalesAggregation;
+  events:hasAmount 14448.16;
+  events:forStore core:S002;
+  events:aggregatesOn base:094b47b310938db661f77b9e561ff688 .
+
+events:TXN000213 a events:SalesAggregation;
+  events:hasAmount 9390.71;
+  events:forStore core:S003;
+  events:aggregatesOn base:094b47b310938db661f77b9e561ff688 .
+
+events:TXN000214 a events:SalesAggregation;
+  events:hasAmount 12070.61;
+  events:forStore core:S004;
+  events:aggregatesOn base:094b47b310938db661f77b9e561ff688 .
+
+events:TXN000215 a events:SalesAggregation;
+  events:hasAmount 15742.01;
+  events:forStore core:S005;
+  events:aggregatesOn base:094b47b310938db661f77b9e561ff688 .
+
+events:TXN000216 a events:SalesAggregation;
+  events:hasAmount 12388.53;
+  events:forStore core:S001;
+  events:aggregatesOn base:760c821759044c747a40acd4332e2df4 .
+
+events:TXN000217 a events:SalesAggregation;
+  events:hasAmount 12803.25;
+  events:forStore core:S002;
+  events:aggregatesOn base:760c821759044c747a40acd4332e2df4 .
+
+events:TXN000218 a events:SalesAggregation;
+  events:hasAmount 12400.41;
+  events:forStore core:S003;
+  events:aggregatesOn base:760c821759044c747a40acd4332e2df4 .
+
+events:TXN000219 a events:SalesAggregation;
+  events:hasAmount 9677.0;
+  events:forStore core:S004;
+  events:aggregatesOn base:760c821759044c747a40acd4332e2df4 .
+
+events:TXN000220 a events:SalesAggregation;
+  events:hasAmount 16790.91;
+  events:forStore core:S005;
+  events:aggregatesOn base:760c821759044c747a40acd4332e2df4 .
+
+events:TXN000221 a events:SalesAggregation;
+  events:hasAmount 10748.94;
+  events:forStore core:S001;
+  events:aggregatesOn base:941e22d8a4f291e3ef640e97c4354a02 .
+
+events:TXN000222 a events:SalesAggregation;
+  events:hasAmount 13264.25;
+  events:forStore core:S002;
+  events:aggregatesOn base:941e22d8a4f291e3ef640e97c4354a02 .
+
+events:TXN000223 a events:SalesAggregation;
+  events:hasAmount 7406.92;
+  events:forStore core:S003;
+  events:aggregatesOn base:941e22d8a4f291e3ef640e97c4354a02 .
+
+events:TXN000224 a events:SalesAggregation;
+  events:hasAmount 10435.41;
+  events:forStore core:S004;
+  events:aggregatesOn base:941e22d8a4f291e3ef640e97c4354a02 .
+
+events:TXN000225 a events:SalesAggregation;
+  events:hasAmount 21388.88;
+  events:forStore core:S005;
+  events:aggregatesOn base:941e22d8a4f291e3ef640e97c4354a02 .
+
+events:TXN000226 a events:SalesAggregation;
+  events:hasAmount 17069.53;
+  events:forStore core:S001;
+  events:aggregatesOn base:8d93d08547e13457432f51b987f473d4 .
+
+events:TXN000227 a events:SalesAggregation;
+  events:hasAmount 21155.33;
+  events:forStore core:S002;
+  events:aggregatesOn base:8d93d08547e13457432f51b987f473d4 .
+
+events:TXN000228 a events:SalesAggregation;
+  events:hasAmount 17100.75;
+  events:forStore core:S003;
+  events:aggregatesOn base:8d93d08547e13457432f51b987f473d4 .
+
+events:TXN000229 a events:SalesAggregation;
+  events:hasAmount 15902.89;
+  events:forStore core:S004;
+  events:aggregatesOn base:8d93d08547e13457432f51b987f473d4 .
+
+events:TXN000230 a events:SalesAggregation;
+  events:hasAmount 24593.24;
+  events:forStore core:S005;
+  events:aggregatesOn base:8d93d08547e13457432f51b987f473d4 .
+
+events:TXN000231 a events:SalesAggregation;
+  events:hasAmount 16215.05;
+  events:forStore core:S001;
+  events:aggregatesOn base:385383b19c9265cbc6dfc926f42a9a47 .
+
+events:TXN000232 a events:SalesAggregation;
+  events:hasAmount 24612.43;
+  events:forStore core:S002;
+  events:aggregatesOn base:385383b19c9265cbc6dfc926f42a9a47 .
+
+events:TXN000233 a events:SalesAggregation;
+  events:hasAmount 14777.16;
+  events:forStore core:S003;
+  events:aggregatesOn base:385383b19c9265cbc6dfc926f42a9a47 .
+
+events:TXN000234 a events:SalesAggregation;
+  events:hasAmount 13900.47;
+  events:forStore core:S004;
+  events:aggregatesOn base:385383b19c9265cbc6dfc926f42a9a47 .
+
+events:TXN000235 a events:SalesAggregation;
+  events:hasAmount 20530.68;
+  events:forStore core:S005;
+  events:aggregatesOn base:385383b19c9265cbc6dfc926f42a9a47 .
+
+events:TXN000236 a events:SalesAggregation;
+  events:hasAmount 10801.91;
+  events:forStore core:S001;
+  events:aggregatesOn base:3b10b95c944456594b42d9fb2227f130 .
+
+events:TXN000237 a events:SalesAggregation;
+  events:hasAmount 16929.67;
+  events:forStore core:S002;
+  events:aggregatesOn base:3b10b95c944456594b42d9fb2227f130 .
+
+events:TXN000238 a events:SalesAggregation;
+  events:hasAmount 9482.21;
+  events:forStore core:S003;
+  events:aggregatesOn base:3b10b95c944456594b42d9fb2227f130 .
+
+events:TXN000239 a events:SalesAggregation;
+  events:hasAmount 12008.52;
+  events:forStore core:S004;
+  events:aggregatesOn base:3b10b95c944456594b42d9fb2227f130 .
+
+events:TXN000240 a events:SalesAggregation;
+  events:hasAmount 16982.14;
+  events:forStore core:S005;
+  events:aggregatesOn base:3b10b95c944456594b42d9fb2227f130 .
+
+events:TXN000241 a events:SalesAggregation;
+  events:hasAmount 15030.65;
+  events:forStore core:S001;
+  events:aggregatesOn base:73c17a0ded536e80dd7014c9d445ee31 .
+
+events:TXN000242 a events:SalesAggregation;
+  events:hasAmount 13920.1;
+  events:forStore core:S002;
+  events:aggregatesOn base:73c17a0ded536e80dd7014c9d445ee31 .
+
+events:TXN000243 a events:SalesAggregation;
+  events:hasAmount 9035.62;
+  events:forStore core:S003;
+  events:aggregatesOn base:73c17a0ded536e80dd7014c9d445ee31 .
+
+events:TXN000244 a events:SalesAggregation;
+  events:hasAmount 13020.83;
+  events:forStore core:S004;
+  events:aggregatesOn base:73c17a0ded536e80dd7014c9d445ee31 .
+
+events:TXN000245 a events:SalesAggregation;
+  events:hasAmount 14915.21;
+  events:forStore core:S005;
+  events:aggregatesOn base:73c17a0ded536e80dd7014c9d445ee31 .
+
+events:TXN000246 a events:SalesAggregation;
+  events:hasAmount 12997.53;
+  events:forStore core:S001;
+  events:aggregatesOn base:fa05f0ecfc8453646c28776e3eb0cfa1 .
+
+events:TXN000247 a events:SalesAggregation;
+  events:hasAmount 16495.88;
+  events:forStore core:S002;
+  events:aggregatesOn base:fa05f0ecfc8453646c28776e3eb0cfa1 .
+
+events:TXN000248 a events:SalesAggregation;
+  events:hasAmount 10335.1;
+  events:forStore core:S003;
+  events:aggregatesOn base:fa05f0ecfc8453646c28776e3eb0cfa1 .
+
+events:TXN000249 a events:SalesAggregation;
+  events:hasAmount 12359.35;
+  events:forStore core:S004;
+  events:aggregatesOn base:fa05f0ecfc8453646c28776e3eb0cfa1 .
+
+events:TXN000250 a events:SalesAggregation;
+  events:hasAmount 20184.1;
+  events:forStore core:S005;
+  events:aggregatesOn base:fa05f0ecfc8453646c28776e3eb0cfa1 .
+
+events:TXN000251 a events:SalesAggregation;
+  events:hasAmount 14605.93;
+  events:forStore core:S001;
+  events:aggregatesOn base:1511cb00613e8ffa4ea4c2934d59b0c4 .
+
+events:TXN000252 a events:SalesAggregation;
+  events:hasAmount 13021.21;
+  events:forStore core:S002;
+  events:aggregatesOn base:1511cb00613e8ffa4ea4c2934d59b0c4 .
+
+events:TXN000253 a events:SalesAggregation;
+  events:hasAmount 11443.04;
+  events:forStore core:S003;
+  events:aggregatesOn base:1511cb00613e8ffa4ea4c2934d59b0c4 .
+
+events:TXN000254 a events:SalesAggregation;
+  events:hasAmount 12803.64;
+  events:forStore core:S004;
+  events:aggregatesOn base:1511cb00613e8ffa4ea4c2934d59b0c4 .
+
+events:TXN000255 a events:SalesAggregation;
+  events:hasAmount 16167.44;
+  events:forStore core:S005;
+  events:aggregatesOn base:1511cb00613e8ffa4ea4c2934d59b0c4 .
+
+events:TXN000256 a events:SalesAggregation;
+  events:hasAmount 12791.8;
+  events:forStore core:S001;
+  events:aggregatesOn base:9913f136f555e8d180895e7b13f3cc29 .
+
+events:TXN000257 a events:SalesAggregation;
+  events:hasAmount 14144.25;
+  events:forStore core:S002;
+  events:aggregatesOn base:9913f136f555e8d180895e7b13f3cc29 .
+
+events:TXN000258 a events:SalesAggregation;
+  events:hasAmount 14347.93;
+  events:forStore core:S003;
+  events:aggregatesOn base:9913f136f555e8d180895e7b13f3cc29 .
+
+events:TXN000259 a events:SalesAggregation;
+  events:hasAmount 13021.06;
+  events:forStore core:S004;
+  events:aggregatesOn base:9913f136f555e8d180895e7b13f3cc29 .
+
+events:TXN000260 a events:SalesAggregation;
+  events:hasAmount 17740.48;
+  events:forStore core:S005;
+  events:aggregatesOn base:9913f136f555e8d180895e7b13f3cc29 .
+
+events:TXN000261 a events:SalesAggregation;
+  events:hasAmount 20512.16;
+  events:forStore core:S001;
+  events:aggregatesOn base:78437fe06118302ab9269c8b74633a45 .
+
+events:TXN000262 a events:SalesAggregation;
+  events:hasAmount 24576.06;
+  events:forStore core:S002;
+  events:aggregatesOn base:78437fe06118302ab9269c8b74633a45 .
+
+events:TXN000263 a events:SalesAggregation;
+  events:hasAmount 17106.04;
+  events:forStore core:S003;
+  events:aggregatesOn base:78437fe06118302ab9269c8b74633a45 .
+
+events:TXN000264 a events:SalesAggregation;
+  events:hasAmount 20819.06;
+  events:forStore core:S004;
+  events:aggregatesOn base:78437fe06118302ab9269c8b74633a45 .
+
+events:TXN000265 a events:SalesAggregation;
+  events:hasAmount 15280.36;
+  events:forStore core:S005;
+  events:aggregatesOn base:78437fe06118302ab9269c8b74633a45 .
+
+events:TXN000266 a events:SalesAggregation;
+  events:hasAmount 16422.49;
+  events:forStore core:S001;
+  events:aggregatesOn base:dd29c402bf731c616c8e1afe5f7faf13 .
+
+events:TXN000267 a events:SalesAggregation;
+  events:hasAmount 17144.13;
+  events:forStore core:S002;
+  events:aggregatesOn base:dd29c402bf731c616c8e1afe5f7faf13 .
+
+events:TXN000268 a events:SalesAggregation;
+  events:hasAmount 15747.5;
+  events:forStore core:S003;
+  events:aggregatesOn base:dd29c402bf731c616c8e1afe5f7faf13 .
+
+events:TXN000269 a events:SalesAggregation;
+  events:hasAmount 16562.56;
+  events:forStore core:S004;
+  events:aggregatesOn base:dd29c402bf731c616c8e1afe5f7faf13 .
+
+events:TXN000270 a events:SalesAggregation;
+  events:hasAmount 20929.75;
+  events:forStore core:S005;
+  events:aggregatesOn base:dd29c402bf731c616c8e1afe5f7faf13 .
+
+events:TXN000271 a events:SalesAggregation;
+  events:hasAmount 11433.65;
+  events:forStore core:S001;
+  events:aggregatesOn base:3260ad7ef0f55524eb46b16414cb560c .
+
+events:TXN000272 a events:SalesAggregation;
+  events:hasAmount 15336.24;
+  events:forStore core:S002;
+  events:aggregatesOn base:3260ad7ef0f55524eb46b16414cb560c .
+
+events:TXN000273 a events:SalesAggregation;
+  events:hasAmount 8152.38;
+  events:forStore core:S003;
+  events:aggregatesOn base:3260ad7ef0f55524eb46b16414cb560c .
+
+events:TXN000274 a events:SalesAggregation;
+  events:hasAmount 11624.8;
+  events:forStore core:S004;
+  events:aggregatesOn base:3260ad7ef0f55524eb46b16414cb560c .
+
+events:TXN000275 a events:SalesAggregation;
+  events:hasAmount 16204.5;
+  events:forStore core:S005;
+  events:aggregatesOn base:3260ad7ef0f55524eb46b16414cb560c .
+
+events:TXN000276 a events:SalesAggregation;
+  events:hasAmount 10775.62;
+  events:forStore core:S001;
+  events:aggregatesOn base:04d6c157a7ca8f8016dd416e9ca2811f .
+
+events:TXN000277 a events:SalesAggregation;
+  events:hasAmount 12803.8;
+  events:forStore core:S002;
+  events:aggregatesOn base:04d6c157a7ca8f8016dd416e9ca2811f .
+
+events:TXN000278 a events:SalesAggregation;
+  events:hasAmount 10782.26;
+  events:forStore core:S003;
+  events:aggregatesOn base:04d6c157a7ca8f8016dd416e9ca2811f .
+
+events:TXN000279 a events:SalesAggregation;
+  events:hasAmount 13112.69;
+  events:forStore core:S004;
+  events:aggregatesOn base:04d6c157a7ca8f8016dd416e9ca2811f .
+
+events:TXN000280 a events:SalesAggregation;
+  events:hasAmount 16090.4;
+  events:forStore core:S005;
+  events:aggregatesOn base:04d6c157a7ca8f8016dd416e9ca2811f .
+
+events:TXN000281 a events:SalesAggregation;
+  events:hasAmount 10598.94;
+  events:forStore core:S001;
+  events:aggregatesOn base:f44459cbd0dfad98908de86222f60dfc .
+
+events:TXN000282 a events:SalesAggregation;
+  events:hasAmount 11190.03;
+  events:forStore core:S002;
+  events:aggregatesOn base:f44459cbd0dfad98908de86222f60dfc .
+
+events:TXN000283 a events:SalesAggregation;
+  events:hasAmount 10279.24;
+  events:forStore core:S003;
+  events:aggregatesOn base:f44459cbd0dfad98908de86222f60dfc .
+
+events:TXN000284 a events:SalesAggregation;
+  events:hasAmount 13234.45;
+  events:forStore core:S004;
+  events:aggregatesOn base:f44459cbd0dfad98908de86222f60dfc .
+
+events:TXN000285 a events:SalesAggregation;
+  events:hasAmount 16514.58;
+  events:forStore core:S005;
+  events:aggregatesOn base:f44459cbd0dfad98908de86222f60dfc .
+
+events:TXN000286 a events:SalesAggregation;
+  events:hasAmount 11679.42;
+  events:forStore core:S001;
+  events:aggregatesOn base:2fed2af6f4ac6887309873c6d6f5ad4c .
+
+events:TXN000287 a events:SalesAggregation;
+  events:hasAmount 12971.95;
+  events:forStore core:S002;
+  events:aggregatesOn base:2fed2af6f4ac6887309873c6d6f5ad4c .
+
+events:TXN000288 a events:SalesAggregation;
+  events:hasAmount 13284.1;
+  events:forStore core:S003;
+  events:aggregatesOn base:2fed2af6f4ac6887309873c6d6f5ad4c .
+
+events:TXN000289 a events:SalesAggregation;
+  events:hasAmount 10840.92;
+  events:forStore core:S004;
+  events:aggregatesOn base:2fed2af6f4ac6887309873c6d6f5ad4c .
+
+events:TXN000290 a events:SalesAggregation;
+  events:hasAmount 14764.07;
+  events:forStore core:S005;
+  events:aggregatesOn base:2fed2af6f4ac6887309873c6d6f5ad4c .
+
+events:TXN000291 a events:SalesAggregation;
+  events:hasAmount 12797.21;
+  events:forStore core:S001;
+  events:aggregatesOn base:8dea283c95738e8618feacd3613ef614 .
+
+events:TXN000292 a events:SalesAggregation;
+  events:hasAmount 18289.45;
+  events:forStore core:S002;
+  events:aggregatesOn base:8dea283c95738e8618feacd3613ef614 .
+
+events:TXN000293 a events:SalesAggregation;
+  events:hasAmount 8327.02;
+  events:forStore core:S003;
+  events:aggregatesOn base:8dea283c95738e8618feacd3613ef614 .
+
+events:TXN000294 a events:SalesAggregation;
+  events:hasAmount 13229.5;
+  events:forStore core:S004;
+  events:aggregatesOn base:8dea283c95738e8618feacd3613ef614 .
+
+events:TXN000295 a events:SalesAggregation;
+  events:hasAmount 16993.12;
+  events:forStore core:S005;
+  events:aggregatesOn base:8dea283c95738e8618feacd3613ef614 .
+
+events:TXN000296 a events:SalesAggregation;
+  events:hasAmount 19194.32;
+  events:forStore core:S001;
+  events:aggregatesOn base:b3897bff8ea3cc7f99549fa31f8d0472 .
+
+events:TXN000297 a events:SalesAggregation;
+  events:hasAmount 19681.92;
+  events:forStore core:S002;
+  events:aggregatesOn base:b3897bff8ea3cc7f99549fa31f8d0472 .
+
+events:TXN000298 a events:SalesAggregation;
+  events:hasAmount 15097.06;
+  events:forStore core:S003;
+  events:aggregatesOn base:b3897bff8ea3cc7f99549fa31f8d0472 .
+
+events:TXN000299 a events:SalesAggregation;
+  events:hasAmount 17458.66;
+  events:forStore core:S004;
+  events:aggregatesOn base:b3897bff8ea3cc7f99549fa31f8d0472 .
+
+events:TXN000300 a events:SalesAggregation;
+  events:hasAmount 17771.0;
+  events:forStore core:S005;
+  events:aggregatesOn base:b3897bff8ea3cc7f99549fa31f8d0472 .
+
+events:TXN000301 a events:SalesAggregation;
+  events:hasAmount 20840.42;
+  events:forStore core:S001;
+  events:aggregatesOn base:5edc37707cdfc2002027b1e0b11584f0 .
+
+events:TXN000302 a events:SalesAggregation;
+  events:hasAmount 17131.19;
+  events:forStore core:S002;
+  events:aggregatesOn base:5edc37707cdfc2002027b1e0b11584f0 .
+
+events:TXN000303 a events:SalesAggregation;
+  events:hasAmount 14553.98;
+  events:forStore core:S003;
+  events:aggregatesOn base:5edc37707cdfc2002027b1e0b11584f0 .
+
+events:TXN000304 a events:SalesAggregation;
+  events:hasAmount 15317.68;
+  events:forStore core:S004;
+  events:aggregatesOn base:5edc37707cdfc2002027b1e0b11584f0 .
+
+events:TXN000305 a events:SalesAggregation;
+  events:hasAmount 24113.21;
+  events:forStore core:S005;
+  events:aggregatesOn base:5edc37707cdfc2002027b1e0b11584f0 .
+
+events:TXN000306 a events:SalesAggregation;
+  events:hasAmount 13453.6;
+  events:forStore core:S001;
+  events:aggregatesOn base:80d5de3a419a69be5ba960bb0fef9a1d .
+
+events:TXN000307 a events:SalesAggregation;
+  events:hasAmount 11828.77;
+  events:forStore core:S002;
+  events:aggregatesOn base:80d5de3a419a69be5ba960bb0fef9a1d .
+
+events:TXN000308 a events:SalesAggregation;
+  events:hasAmount 12591.27;
+  events:forStore core:S003;
+  events:aggregatesOn base:80d5de3a419a69be5ba960bb0fef9a1d .
+
+events:TXN000309 a events:SalesAggregation;
+  events:hasAmount 16017.99;
+  events:forStore core:S004;
+  events:aggregatesOn base:80d5de3a419a69be5ba960bb0fef9a1d .
+
+events:TXN000310 a events:SalesAggregation;
+  events:hasAmount 21777.32;
+  events:forStore core:S005;
+  events:aggregatesOn base:80d5de3a419a69be5ba960bb0fef9a1d .
+
+events:TXN000311 a events:SalesAggregation;
+  events:hasAmount 13782.97;
+  events:forStore core:S001;
+  events:aggregatesOn base:4f76fc777dbfe60913ac6f49a713325e .
+
+events:TXN000312 a events:SalesAggregation;
+  events:hasAmount 16469.02;
+  events:forStore core:S002;
+  events:aggregatesOn base:4f76fc777dbfe60913ac6f49a713325e .
+
+events:TXN000313 a events:SalesAggregation;
+  events:hasAmount 9032.83;
+  events:forStore core:S003;
+  events:aggregatesOn base:4f76fc777dbfe60913ac6f49a713325e .
+
+events:TXN000314 a events:SalesAggregation;
+  events:hasAmount 10226.8;
+  events:forStore core:S004;
+  events:aggregatesOn base:4f76fc777dbfe60913ac6f49a713325e .
+
+events:TXN000315 a events:SalesAggregation;
+  events:hasAmount 13843.22;
+  events:forStore core:S005;
+  events:aggregatesOn base:4f76fc777dbfe60913ac6f49a713325e .
+
+events:TXN000316 a events:SalesAggregation;
+  events:hasAmount 13992.05;
+  events:forStore core:S001;
+  events:aggregatesOn base:402753af5e0286ebca562300607651d1 .
+
+events:TXN000317 a events:SalesAggregation;
+  events:hasAmount 18006.26;
+  events:forStore core:S002;
+  events:aggregatesOn base:402753af5e0286ebca562300607651d1 .
+
+events:TXN000318 a events:SalesAggregation;
+  events:hasAmount 8004.19;
+  events:forStore core:S003;
+  events:aggregatesOn base:402753af5e0286ebca562300607651d1 .
+
+events:TXN000319 a events:SalesAggregation;
+  events:hasAmount 13835.38;
+  events:forStore core:S004;
+  events:aggregatesOn base:402753af5e0286ebca562300607651d1 .
+
+events:TXN000320 a events:SalesAggregation;
+  events:hasAmount 16607.41;
+  events:forStore core:S005;
+  events:aggregatesOn base:402753af5e0286ebca562300607651d1 .
+
+events:TXN000321 a events:SalesAggregation;
+  events:hasAmount 14177.74;
+  events:forStore core:S001;
+  events:aggregatesOn base:e6b9d5a22c79c6e4bde01404152f6a3a .
+
+events:TXN000322 a events:SalesAggregation;
+  events:hasAmount 11570.69;
+  events:forStore core:S002;
+  events:aggregatesOn base:e6b9d5a22c79c6e4bde01404152f6a3a .
+
+events:TXN000323 a events:SalesAggregation;
+  events:hasAmount 9842.14;
+  events:forStore core:S003;
+  events:aggregatesOn base:e6b9d5a22c79c6e4bde01404152f6a3a .
+
+events:TXN000324 a events:SalesAggregation;
+  events:hasAmount 14248.66;
+  events:forStore core:S004;
+  events:aggregatesOn base:e6b9d5a22c79c6e4bde01404152f6a3a .
+
+events:TXN000325 a events:SalesAggregation;
+  events:hasAmount 16021.55;
+  events:forStore core:S005;
+  events:aggregatesOn base:e6b9d5a22c79c6e4bde01404152f6a3a .
+
+events:TXN000326 a events:SalesAggregation;
+  events:hasAmount 14336.19;
+  events:forStore core:S001;
+  events:aggregatesOn base:6b46f8e5a2f754bbc65a63909a0c1585 .
+
+events:TXN000327 a events:SalesAggregation;
+  events:hasAmount 13451.52;
+  events:forStore core:S002;
+  events:aggregatesOn base:6b46f8e5a2f754bbc65a63909a0c1585 .
+
+events:TXN000328 a events:SalesAggregation;
+  events:hasAmount 8018.6;
+  events:forStore core:S003;
+  events:aggregatesOn base:6b46f8e5a2f754bbc65a63909a0c1585 .
+
+events:TXN000329 a events:SalesAggregation;
+  events:hasAmount 13817.92;
+  events:forStore core:S004;
+  events:aggregatesOn base:6b46f8e5a2f754bbc65a63909a0c1585 .
+
+events:TXN000330 a events:SalesAggregation;
+  events:hasAmount 19291.2;
+  events:forStore core:S005;
+  events:aggregatesOn base:6b46f8e5a2f754bbc65a63909a0c1585 .
+
+events:TXN000331 a events:SalesAggregation;
+  events:hasAmount 13613.07;
+  events:forStore core:S001;
+  events:aggregatesOn base:1d165b7c8dbf1f8f836b4717a154429d .
+
+events:TXN000332 a events:SalesAggregation;
+  events:hasAmount 17919.47;
+  events:forStore core:S002;
+  events:aggregatesOn base:1d165b7c8dbf1f8f836b4717a154429d .
+
+events:TXN000333 a events:SalesAggregation;
+  events:hasAmount 13903.14;
+  events:forStore core:S003;
+  events:aggregatesOn base:1d165b7c8dbf1f8f836b4717a154429d .
+
+events:TXN000334 a events:SalesAggregation;
+  events:hasAmount 19839.2;
+  events:forStore core:S004;
+  events:aggregatesOn base:1d165b7c8dbf1f8f836b4717a154429d .
+
+events:TXN000335 a events:SalesAggregation;
+  events:hasAmount 19285.22;
+  events:forStore core:S005;
+  events:aggregatesOn base:1d165b7c8dbf1f8f836b4717a154429d .
+
+events:TXN000336 a events:SalesAggregation;
+  events:hasAmount 19779.32;
+  events:forStore core:S001;
+  events:aggregatesOn base:035e711aaa29a9632f67428b85c43fb3 .
+
+events:TXN000337 a events:SalesAggregation;
+  events:hasAmount 22414.26;
+  events:forStore core:S002;
+  events:aggregatesOn base:035e711aaa29a9632f67428b85c43fb3 .
+
+events:TXN000338 a events:SalesAggregation;
+  events:hasAmount 18572.17;
+  events:forStore core:S003;
+  events:aggregatesOn base:035e711aaa29a9632f67428b85c43fb3 .
+
+events:TXN000339 a events:SalesAggregation;
+  events:hasAmount 20423.07;
+  events:forStore core:S004;
+  events:aggregatesOn base:035e711aaa29a9632f67428b85c43fb3 .
+
+events:TXN000340 a events:SalesAggregation;
+  events:hasAmount 19499.15;
+  events:forStore core:S005;
+  events:aggregatesOn base:035e711aaa29a9632f67428b85c43fb3 .
+
+events:TXN000341 a events:SalesAggregation;
+  events:hasAmount 9376.49;
+  events:forStore core:S001;
+  events:aggregatesOn base:02aba98ffebc7848559dbd36b6e7db46 .
+
+events:TXN000342 a events:SalesAggregation;
+  events:hasAmount 12762.25;
+  events:forStore core:S002;
+  events:aggregatesOn base:02aba98ffebc7848559dbd36b6e7db46 .
+
+events:TXN000343 a events:SalesAggregation;
+  events:hasAmount 8768.09;
+  events:forStore core:S003;
+  events:aggregatesOn base:02aba98ffebc7848559dbd36b6e7db46 .
+
+events:TXN000344 a events:SalesAggregation;
+  events:hasAmount 13009.99;
+  events:forStore core:S004;
+  events:aggregatesOn base:02aba98ffebc7848559dbd36b6e7db46 .
+
+events:TXN000345 a events:SalesAggregation;
+  events:hasAmount 13592.91;
+  events:forStore core:S005;
+  events:aggregatesOn base:02aba98ffebc7848559dbd36b6e7db46 .
+
+events:TXN000346 a events:SalesAggregation;
+  events:hasAmount 10707.19;
+  events:forStore core:S001;
+  events:aggregatesOn base:0b84586616b458e327ab9074a816575f .
+
+events:TXN000347 a events:SalesAggregation;
+  events:hasAmount 10886.36;
+  events:forStore core:S002;
+  events:aggregatesOn base:0b84586616b458e327ab9074a816575f .
+
+events:TXN000348 a events:SalesAggregation;
+  events:hasAmount 9165.22;
+  events:forStore core:S003;
+  events:aggregatesOn base:0b84586616b458e327ab9074a816575f .
+
+events:TXN000349 a events:SalesAggregation;
+  events:hasAmount 14311.39;
+  events:forStore core:S004;
+  events:aggregatesOn base:0b84586616b458e327ab9074a816575f .
+
+events:TXN000350 a events:SalesAggregation;
+  events:hasAmount 14472.62;
+  events:forStore core:S005;
+  events:aggregatesOn base:0b84586616b458e327ab9074a816575f .
+
+events:TXN000351 a events:SalesAggregation;
+  events:hasAmount 11486.24;
+  events:forStore core:S001;
+  events:aggregatesOn base:698c6a41754d31d968a6f672ba40381a .
+
+events:TXN000352 a events:SalesAggregation;
+  events:hasAmount 11735.48;
+  events:forStore core:S002;
+  events:aggregatesOn base:698c6a41754d31d968a6f672ba40381a .
+
+events:TXN000353 a events:SalesAggregation;
+  events:hasAmount 10190.81;
+  events:forStore core:S003;
+  events:aggregatesOn base:698c6a41754d31d968a6f672ba40381a .
+
+events:TXN000354 a events:SalesAggregation;
+  events:hasAmount 13981.57;
+  events:forStore core:S004;
+  events:aggregatesOn base:698c6a41754d31d968a6f672ba40381a .
+
+events:TXN000355 a events:SalesAggregation;
+  events:hasAmount 16254.19;
+  events:forStore core:S005;
+  events:aggregatesOn base:698c6a41754d31d968a6f672ba40381a .
+
+events:TXN000356 a events:SalesAggregation;
+  events:hasAmount 11199.0;
+  events:forStore core:S001;
+  events:aggregatesOn base:25d34630876617e030af019a0e80f862 .
+
+events:TXN000357 a events:SalesAggregation;
+  events:hasAmount 16465.23;
+  events:forStore core:S002;
+  events:aggregatesOn base:25d34630876617e030af019a0e80f862 .
+
+events:TXN000358 a events:SalesAggregation;
+  events:hasAmount 14031.38;
+  events:forStore core:S003;
+  events:aggregatesOn base:25d34630876617e030af019a0e80f862 .
+
+events:TXN000359 a events:SalesAggregation;
+  events:hasAmount 15690.87;
+  events:forStore core:S004;
+  events:aggregatesOn base:25d34630876617e030af019a0e80f862 .
+
+events:TXN000360 a events:SalesAggregation;
+  events:hasAmount 12995.27;
+  events:forStore core:S005;
+  events:aggregatesOn base:25d34630876617e030af019a0e80f862 .
+
+events:TXN000361 a events:SalesAggregation;
+  events:hasAmount 11354.17;
+  events:forStore core:S001;
+  events:aggregatesOn base:9e5752c0771e745aa67cad9225cf03f0 .
+
+events:TXN000362 a events:SalesAggregation;
+  events:hasAmount 14009.3;
+  events:forStore core:S002;
+  events:aggregatesOn base:9e5752c0771e745aa67cad9225cf03f0 .
+
+events:TXN000363 a events:SalesAggregation;
+  events:hasAmount 11635.91;
+  events:forStore core:S003;
+  events:aggregatesOn base:9e5752c0771e745aa67cad9225cf03f0 .
+
+events:TXN000364 a events:SalesAggregation;
+  events:hasAmount 10843.04;
+  events:forStore core:S004;
+  events:aggregatesOn base:9e5752c0771e745aa67cad9225cf03f0 .
+
+events:TXN000365 a events:SalesAggregation;
+  events:hasAmount 19611.31;
+  events:forStore core:S005;
+  events:aggregatesOn base:9e5752c0771e745aa67cad9225cf03f0 .
+
+events:TXN000366 a events:SalesAggregation;
+  events:hasAmount 20462.67;
+  events:forStore core:S001;
+  events:aggregatesOn base:53d70159c12ccbf7dc5db9ca2779ef08 .
+
+events:TXN000367 a events:SalesAggregation;
+  events:hasAmount 26189.03;
+  events:forStore core:S002;
+  events:aggregatesOn base:53d70159c12ccbf7dc5db9ca2779ef08 .
+
+events:TXN000368 a events:SalesAggregation;
+  events:hasAmount 14741.91;
+  events:forStore core:S003;
+  events:aggregatesOn base:53d70159c12ccbf7dc5db9ca2779ef08 .
+
+events:TXN000369 a events:SalesAggregation;
+  events:hasAmount 15645.83;
+  events:forStore core:S004;
+  events:aggregatesOn base:53d70159c12ccbf7dc5db9ca2779ef08 .
+
+events:TXN000370 a events:SalesAggregation;
+  events:hasAmount 22669.33;
+  events:forStore core:S005;
+  events:aggregatesOn base:53d70159c12ccbf7dc5db9ca2779ef08 .
+
+events:TXN000371 a events:SalesAggregation;
+  events:hasAmount 14588.21;
+  events:forStore core:S001;
+  events:aggregatesOn base:1595c4fa6f7a4494dd1cb0f73197117a .
+
+events:TXN000372 a events:SalesAggregation;
+  events:hasAmount 26819.73;
+  events:forStore core:S002;
+  events:aggregatesOn base:1595c4fa6f7a4494dd1cb0f73197117a .
+
+events:TXN000373 a events:SalesAggregation;
+  events:hasAmount 16902.01;
+  events:forStore core:S003;
+  events:aggregatesOn base:1595c4fa6f7a4494dd1cb0f73197117a .
+
+events:TXN000374 a events:SalesAggregation;
+  events:hasAmount 14314.94;
+  events:forStore core:S004;
+  events:aggregatesOn base:1595c4fa6f7a4494dd1cb0f73197117a .
+
+events:TXN000375 a events:SalesAggregation;
+  events:hasAmount 20621.26;
+  events:forStore core:S005;
+  events:aggregatesOn base:1595c4fa6f7a4494dd1cb0f73197117a .
+
+events:TXN000376 a events:SalesAggregation;
+  events:hasAmount 15708.15;
+  events:forStore core:S001;
+  events:aggregatesOn base:504b8d54501f263420be384af3445978 .
+
+events:TXN000377 a events:SalesAggregation;
+  events:hasAmount 12933.8;
+  events:forStore core:S002;
+  events:aggregatesOn base:504b8d54501f263420be384af3445978 .
+
+events:TXN000378 a events:SalesAggregation;
+  events:hasAmount 12429.56;
+  events:forStore core:S003;
+  events:aggregatesOn base:504b8d54501f263420be384af3445978 .
+
+events:TXN000379 a events:SalesAggregation;
+  events:hasAmount 13694.85;
+  events:forStore core:S004;
+  events:aggregatesOn base:504b8d54501f263420be384af3445978 .
+
+events:TXN000380 a events:SalesAggregation;
+  events:hasAmount 15076.84;
+  events:forStore core:S005;
+  events:aggregatesOn base:504b8d54501f263420be384af3445978 .
+
+events:TXN000381 a events:SalesAggregation;
+  events:hasAmount 8704.95;
+  events:forStore core:S001;
+  events:aggregatesOn base:da168f2423762cd6d212d2b6c50a48df .
+
+events:TXN000382 a events:SalesAggregation;
+  events:hasAmount 15113.85;
+  events:forStore core:S002;
+  events:aggregatesOn base:da168f2423762cd6d212d2b6c50a48df .
+
+events:TXN000383 a events:SalesAggregation;
+  events:hasAmount 14874.18;
+  events:forStore core:S003;
+  events:aggregatesOn base:da168f2423762cd6d212d2b6c50a48df .
+
+events:TXN000384 a events:SalesAggregation;
+  events:hasAmount 12364.13;
+  events:forStore core:S004;
+  events:aggregatesOn base:da168f2423762cd6d212d2b6c50a48df .
+
+events:TXN000385 a events:SalesAggregation;
+  events:hasAmount 15055.19;
+  events:forStore core:S005;
+  events:aggregatesOn base:da168f2423762cd6d212d2b6c50a48df .
+
+events:TXN000386 a events:SalesAggregation;
+  events:hasAmount 12365.2;
+  events:forStore core:S001;
+  events:aggregatesOn base:d5eff4c897d132f8b480644188673e53 .
+
+events:TXN000387 a events:SalesAggregation;
+  events:hasAmount 13381.21;
+  events:forStore core:S002;
+  events:aggregatesOn base:d5eff4c897d132f8b480644188673e53 .
+
+events:TXN000388 a events:SalesAggregation;
+  events:hasAmount 10560.16;
+  events:forStore core:S003;
+  events:aggregatesOn base:d5eff4c897d132f8b480644188673e53 .
+
+events:TXN000389 a events:SalesAggregation;
+  events:hasAmount 13367.37;
+  events:forStore core:S004;
+  events:aggregatesOn base:d5eff4c897d132f8b480644188673e53 .
+
+events:TXN000390 a events:SalesAggregation;
+  events:hasAmount 18061.23;
+  events:forStore core:S005;
+  events:aggregatesOn base:d5eff4c897d132f8b480644188673e53 .
+
+events:TXN000391 a events:SalesAggregation;
+  events:hasAmount 11724.9;
+  events:forStore core:S001;
+  events:aggregatesOn base:c2a776f97547a1f42c01489ae4c3093a .
+
+events:TXN000392 a events:SalesAggregation;
+  events:hasAmount 13977.44;
+  events:forStore core:S002;
+  events:aggregatesOn base:c2a776f97547a1f42c01489ae4c3093a .
+
+events:TXN000393 a events:SalesAggregation;
+  events:hasAmount 9349.91;
+  events:forStore core:S003;
+  events:aggregatesOn base:c2a776f97547a1f42c01489ae4c3093a .
+
+events:TXN000394 a events:SalesAggregation;
+  events:hasAmount 14502.17;
+  events:forStore core:S004;
+  events:aggregatesOn base:c2a776f97547a1f42c01489ae4c3093a .
+
+events:TXN000395 a events:SalesAggregation;
+  events:hasAmount 12357.46;
+  events:forStore core:S005;
+  events:aggregatesOn base:c2a776f97547a1f42c01489ae4c3093a .
+
+events:TXN000396 a events:SalesAggregation;
+  events:hasAmount 9747.36;
+  events:forStore core:S001;
+  events:aggregatesOn base:3d4f25a6c633a2122dc6aed0565ac0d0 .
+
+events:TXN000397 a events:SalesAggregation;
+  events:hasAmount 11125.76;
+  events:forStore core:S002;
+  events:aggregatesOn base:3d4f25a6c633a2122dc6aed0565ac0d0 .
+
+events:TXN000398 a events:SalesAggregation;
+  events:hasAmount 9236.65;
+  events:forStore core:S003;
+  events:aggregatesOn base:3d4f25a6c633a2122dc6aed0565ac0d0 .
+
+events:TXN000399 a events:SalesAggregation;
+  events:hasAmount 12208.0;
+  events:forStore core:S004;
+  events:aggregatesOn base:3d4f25a6c633a2122dc6aed0565ac0d0 .
+
+events:TXN000400 a events:SalesAggregation;
+  events:hasAmount 17448.74;
+  events:forStore core:S005;
+  events:aggregatesOn base:3d4f25a6c633a2122dc6aed0565ac0d0 .
+
+events:TXN000401 a events:SalesAggregation;
+  events:hasAmount 15491.75;
+  events:forStore core:S001;
+  events:aggregatesOn base:a70ac2f3e9ccfc042d1f43cf96133d91 .
+
+events:TXN000402 a events:SalesAggregation;
+  events:hasAmount 17600.18;
+  events:forStore core:S002;
+  events:aggregatesOn base:a70ac2f3e9ccfc042d1f43cf96133d91 .
+
+events:TXN000403 a events:SalesAggregation;
+  events:hasAmount 11114.91;
+  events:forStore core:S003;
+  events:aggregatesOn base:a70ac2f3e9ccfc042d1f43cf96133d91 .
+
+events:TXN000404 a events:SalesAggregation;
+  events:hasAmount 20532.85;
+  events:forStore core:S004;
+  events:aggregatesOn base:a70ac2f3e9ccfc042d1f43cf96133d91 .
+
+events:TXN000405 a events:SalesAggregation;
+  events:hasAmount 23601.09;
+  events:forStore core:S005;
+  events:aggregatesOn base:a70ac2f3e9ccfc042d1f43cf96133d91 .
+
+events:TXN000406 a events:SalesAggregation;
+  events:hasAmount 17332.93;
+  events:forStore core:S001;
+  events:aggregatesOn base:f94b963c1ad1de1101b63fd76ab87b28 .
+
+events:TXN000407 a events:SalesAggregation;
+  events:hasAmount 21553.94;
+  events:forStore core:S002;
+  events:aggregatesOn base:f94b963c1ad1de1101b63fd76ab87b28 .
+
+events:TXN000408 a events:SalesAggregation;
+  events:hasAmount 13410.42;
+  events:forStore core:S003;
+  events:aggregatesOn base:f94b963c1ad1de1101b63fd76ab87b28 .
+
+events:TXN000409 a events:SalesAggregation;
+  events:hasAmount 21383.38;
+  events:forStore core:S004;
+  events:aggregatesOn base:f94b963c1ad1de1101b63fd76ab87b28 .
+
+events:TXN000410 a events:SalesAggregation;
+  events:hasAmount 21469.41;
+  events:forStore core:S005;
+  events:aggregatesOn base:f94b963c1ad1de1101b63fd76ab87b28 .
+
+events:TXN000411 a events:SalesAggregation;
+  events:hasAmount 9031.48;
+  events:forStore core:S001;
+  events:aggregatesOn base:439b20a26452e0b0dd3e22edd86cd4f5 .
+
+events:TXN000412 a events:SalesAggregation;
+  events:hasAmount 10231.32;
+  events:forStore core:S002;
+  events:aggregatesOn base:439b20a26452e0b0dd3e22edd86cd4f5 .
+
+events:TXN000413 a events:SalesAggregation;
+  events:hasAmount 12554.5;
+  events:forStore core:S003;
+  events:aggregatesOn base:439b20a26452e0b0dd3e22edd86cd4f5 .
+
+events:TXN000414 a events:SalesAggregation;
+  events:hasAmount 16506.67;
+  events:forStore core:S004;
+  events:aggregatesOn base:439b20a26452e0b0dd3e22edd86cd4f5 .
+
+events:TXN000415 a events:SalesAggregation;
+  events:hasAmount 16124.1;
+  events:forStore core:S005;
+  events:aggregatesOn base:439b20a26452e0b0dd3e22edd86cd4f5 .
+
+events:TXN000416 a events:SalesAggregation;
+  events:hasAmount 14414.97;
+  events:forStore core:S001;
+  events:aggregatesOn base:a10567df7eebdcaf237dd69613d6cee9 .
+
+events:TXN000417 a events:SalesAggregation;
+  events:hasAmount 13336.43;
+  events:forStore core:S002;
+  events:aggregatesOn base:a10567df7eebdcaf237dd69613d6cee9 .
+
+events:TXN000418 a events:SalesAggregation;
+  events:hasAmount 10410.06;
+  events:forStore core:S003;
+  events:aggregatesOn base:a10567df7eebdcaf237dd69613d6cee9 .
+
+events:TXN000419 a events:SalesAggregation;
+  events:hasAmount 15035.18;
+  events:forStore core:S004;
+  events:aggregatesOn base:a10567df7eebdcaf237dd69613d6cee9 .
+
+events:TXN000420 a events:SalesAggregation;
+  events:hasAmount 19086.07;
+  events:forStore core:S005;
+  events:aggregatesOn base:a10567df7eebdcaf237dd69613d6cee9 .
+
+events:TXN000421 a events:SalesAggregation;
+  events:hasAmount 12004.81;
+  events:forStore core:S001;
+  events:aggregatesOn base:aa18e6e176158eecbd815f7c8e7a41b9 .
+
+events:TXN000422 a events:SalesAggregation;
+  events:hasAmount 13573.35;
+  events:forStore core:S002;
+  events:aggregatesOn base:aa18e6e176158eecbd815f7c8e7a41b9 .
+
+events:TXN000423 a events:SalesAggregation;
+  events:hasAmount 10734.12;
+  events:forStore core:S003;
+  events:aggregatesOn base:aa18e6e176158eecbd815f7c8e7a41b9 .
+
+events:TXN000424 a events:SalesAggregation;
+  events:hasAmount 10683.63;
+  events:forStore core:S004;
+  events:aggregatesOn base:aa18e6e176158eecbd815f7c8e7a41b9 .
+
+events:TXN000425 a events:SalesAggregation;
+  events:hasAmount 20899.09;
+  events:forStore core:S005;
+  events:aggregatesOn base:aa18e6e176158eecbd815f7c8e7a41b9 .
+
+events:TXN000426 a events:SalesAggregation;
+  events:hasAmount 12460.16;
+  events:forStore core:S001;
+  events:aggregatesOn base:9d6c6b804ca90923c9d2b25d63499fb5 .
+
+events:TXN000427 a events:SalesAggregation;
+  events:hasAmount 10216.96;
+  events:forStore core:S002;
+  events:aggregatesOn base:9d6c6b804ca90923c9d2b25d63499fb5 .
+
+events:TXN000428 a events:SalesAggregation;
+  events:hasAmount 11276.97;
+  events:forStore core:S003;
+  events:aggregatesOn base:9d6c6b804ca90923c9d2b25d63499fb5 .
+
+events:TXN000429 a events:SalesAggregation;
+  events:hasAmount 13097.0;
+  events:forStore core:S004;
+  events:aggregatesOn base:9d6c6b804ca90923c9d2b25d63499fb5 .
+
+events:TXN000430 a events:SalesAggregation;
+  events:hasAmount 14755.11;
+  events:forStore core:S005;
+  events:aggregatesOn base:9d6c6b804ca90923c9d2b25d63499fb5 .
+
+events:TXN000431 a events:SalesAggregation;
+  events:hasAmount 14423.89;
+  events:forStore core:S001;
+  events:aggregatesOn base:4b62de32582f8582b2df55c221906afe .
+
+events:TXN000432 a events:SalesAggregation;
+  events:hasAmount 11765.63;
+  events:forStore core:S002;
+  events:aggregatesOn base:4b62de32582f8582b2df55c221906afe .
+
+events:TXN000433 a events:SalesAggregation;
+  events:hasAmount 10646.63;
+  events:forStore core:S003;
+  events:aggregatesOn base:4b62de32582f8582b2df55c221906afe .
+
+events:TXN000434 a events:SalesAggregation;
+  events:hasAmount 11851.35;
+  events:forStore core:S004;
+  events:aggregatesOn base:4b62de32582f8582b2df55c221906afe .
+
+events:TXN000435 a events:SalesAggregation;
+  events:hasAmount 16822.28;
+  events:forStore core:S005;
+  events:aggregatesOn base:4b62de32582f8582b2df55c221906afe .
+
+events:TXN000436 a events:SalesAggregation;
+  events:hasAmount 17085.43;
+  events:forStore core:S001;
+  events:aggregatesOn base:625a7d47406e94c418e409362e0641ed .
+
+events:TXN000437 a events:SalesAggregation;
+  events:hasAmount 17896.0;
+  events:forStore core:S002;
+  events:aggregatesOn base:625a7d47406e94c418e409362e0641ed .
+
+events:TXN000438 a events:SalesAggregation;
+  events:hasAmount 13791.76;
+  events:forStore core:S003;
+  events:aggregatesOn base:625a7d47406e94c418e409362e0641ed .
+
+events:TXN000439 a events:SalesAggregation;
+  events:hasAmount 22261.64;
+  events:forStore core:S004;
+  events:aggregatesOn base:625a7d47406e94c418e409362e0641ed .
+
+events:TXN000440 a events:SalesAggregation;
+  events:hasAmount 15712.23;
+  events:forStore core:S005;
+  events:aggregatesOn base:625a7d47406e94c418e409362e0641ed .
+
+events:TXN000441 a events:SalesAggregation;
+  events:hasAmount 15705.06;
+  events:forStore core:S001;
+  events:aggregatesOn base:e047381f8feeb53547b2aa4196c6bec7 .
+
+events:TXN000442 a events:SalesAggregation;
+  events:hasAmount 18349.35;
+  events:forStore core:S002;
+  events:aggregatesOn base:e047381f8feeb53547b2aa4196c6bec7 .
+
+events:TXN000443 a events:SalesAggregation;
+  events:hasAmount 14512.47;
+  events:forStore core:S003;
+  events:aggregatesOn base:e047381f8feeb53547b2aa4196c6bec7 .
+
+events:TXN000444 a events:SalesAggregation;
+  events:hasAmount 19548.8;
+  events:forStore core:S004;
+  events:aggregatesOn base:e047381f8feeb53547b2aa4196c6bec7 .
+
+events:TXN000445 a events:SalesAggregation;
+  events:hasAmount 23473.92;
+  events:forStore core:S005;
+  events:aggregatesOn base:e047381f8feeb53547b2aa4196c6bec7 .
+
+events:TXN000446 a events:SalesAggregation;
+  events:hasAmount 10694.29;
+  events:forStore core:S001;
+  events:aggregatesOn base:454f5ceb8ac64f57018ee0db5a3f9205 .
+
+events:TXN000447 a events:SalesAggregation;
+  events:hasAmount 17747.22;
+  events:forStore core:S002;
+  events:aggregatesOn base:454f5ceb8ac64f57018ee0db5a3f9205 .
+
+events:TXN000448 a events:SalesAggregation;
+  events:hasAmount 13911.32;
+  events:forStore core:S003;
+  events:aggregatesOn base:454f5ceb8ac64f57018ee0db5a3f9205 .
+
+events:TXN000449 a events:SalesAggregation;
+  events:hasAmount 12600.0;
+  events:forStore core:S004;
+  events:aggregatesOn base:454f5ceb8ac64f57018ee0db5a3f9205 .
+
+events:TXN000450 a events:SalesAggregation;
+  events:hasAmount 18113.53;
+  events:forStore core:S005;
+  events:aggregatesOn base:454f5ceb8ac64f57018ee0db5a3f9205 .

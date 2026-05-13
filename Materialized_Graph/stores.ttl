@@ -1,0 +1,57 @@
+@base <http://example.org/qsr_kg#> .
+@prefix events: <http://example.org/qsr_kg/QSREventsOntology#> .
+@prefix timeOnt: <http://example.org/qsr_kg/QSRTimeOntology#> .
+@prefix location: <http://example.org/qsr_kg/QSRLocationOntology#> .
+@prefix inventory: <http://example.org/qsr_kg/QSRInventoryOntology#> .
+@prefix promotions: <http://example.org/qsr_kg/QSRPromotionsOntology#> .
+@prefix competition: <http://example.org/qsr_kg/QSRCompetitionOntology#> .
+@prefix performance: <http://example.org/qsr_kg/QSRPerformanceOntology#> .
+@prefix core: <http://example.org/qsr_kg/QSRCoreOntology#> .
+@prefix base: <http://example.org/qsr_kg#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+core:S001 a core:Store;
+  rdfs:label "Burger Haven - Olaya";
+  location:hasLocation location:26f9ed369061760e451de225e14de71a .
+
+location:26f9ed369061760e451de225e14de71a a location:Location;
+  location:longitude 46.6753;
+  location:latitude 24.7136;
+  rdfs:label "Olaya District" .
+
+core:S002 a core:Store;
+  rdfs:label "Burger Haven - Al Malqa";
+  location:hasLocation location:7f1a036dd376ddeb4b3f574ef67f20d4 .
+
+location:7f1a036dd376ddeb4b3f574ef67f20d4 a location:Location;
+  location:longitude 46.6186;
+  location:latitude 24.7831;
+  rdfs:label "Al Malqa Mall" .
+
+core:S003 a core:Store;
+  rdfs:label "Burger Haven - King Fahd";
+  location:hasLocation location:f47dc63edab93dec5dd90bafe65df01d .
+
+location:f47dc63edab93dec5dd90bafe65df01d a location:Location;
+  location:longitude 46.7219;
+  location:latitude 24.6877;
+  rdfs:label "King Fahd Road" .
+
+core:S004 a core:Store;
+  rdfs:label "Burger Haven - Granada";
+  location:hasLocation location:d54dee37d584dbb4808d05fd0a11008d .
+
+location:d54dee37d584dbb4808d05fd0a11008d a location:Location;
+  location:longitude 46.7377;
+  location:latitude 24.7744;
+  rdfs:label "Granada Center" .
+
+core:S005 a core:Store;
+  rdfs:label "Burger Haven - Riyadh Park";
+  location:hasLocation location:dc5ad3e54596d6697ad3b74e23039a13 .
+
+location:dc5ad3e54596d6697ad3b74e23039a13 a location:Location;
+  location:longitude 46.6444;
+  location:latitude 24.7536;
+  rdfs:label "Riyadh Park Mall" .

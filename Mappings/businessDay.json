@@ -1,0 +1,72 @@
+{
+  "baseIRI": "http://example.org/qsr_kg#",
+  "namespaces": {
+    "events": "http://example.org/qsr_kg/QSREventsOntology#",
+    "timeOnt": "http://example.org/qsr_kg/QSRTimeOntology#",
+    "location": "http://example.org/qsr_kg/QSRLocationOntology#",
+    "inventory": "http://example.org/qsr_kg/QSRInventoryOntology#",
+    "promotions": "http://example.org/qsr_kg/QSRPromotionsOntology#",
+    "competition": "http://example.org/qsr_kg/QSRCompetitionOntology#",
+    "performance": "http://example.org/qsr_kg/QSRPerformanceOntology#",
+    "core": "http://example.org/qsr_kg/QSRCoreOntology#",
+    "base": "http://example.org/qsr_kg#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "subjectMappings": [
+    {
+      "propertyMappings": [
+        {
+          "property": {
+            "transformation": {
+              "expression": "base",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "hasDayOfWeek"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "base",
+                "language": "prefix"
+              },
+              "valueSource": {
+                "columnName": "day_name",
+                "source": "column"
+              },
+              "valueType": {
+                "propertyMappings": [],
+                "type": "iri",
+                "typeMappings": []
+              }
+            }
+          ]
+        }
+      ],
+      "subject": {
+        "transformation": {
+          "expression": "\"http://example.org/qsr_kg#\"+cells['date'].value.md5()",
+          "language": "grel"
+        },
+        "valueSource": {
+          "source": "row_index"
+        }
+      },
+      "typeMappings": [
+        {
+          "transformation": {
+            "expression": "timeOnt",
+            "language": "prefix"
+          },
+          "valueSource": {
+            "source": "constant",
+            "constant": "BusinessDay"
+          }
+        }
+      ]
+    }
+  ]
+}

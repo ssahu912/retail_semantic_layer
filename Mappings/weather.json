@@ -1,0 +1,220 @@
+{
+  "baseIRI": "http://example.org/qsr_kg#",
+  "namespaces": {
+    "events": "http://example.org/qsr_kg/QSREventsOntology#",
+    "timeOnt": "http://example.org/qsr_kg/QSRTimeOntology#",
+    "location": "http://example.org/qsr_kg/QSRLocationOntology#",
+    "inventory": "http://example.org/qsr_kg/QSRInventoryOntology#",
+    "promotions": "http://example.org/qsr_kg/QSRPromotionsOntology#",
+    "competition": "http://example.org/qsr_kg/QSRCompetitionOntology#",
+    "performance": "http://example.org/qsr_kg/QSRPerformanceOntology#",
+    "core": "http://example.org/qsr_kg/QSRCoreOntology#",
+    "base": "http://example.org/qsr_kg#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "subjectMappings": [
+    {
+      "propertyMappings": [
+        {
+          "property": {
+            "transformation": {
+              "expression": "base",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "condition"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "conditions",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "datatype_literal",
+                "datatype": {
+                  "transformation": {
+                    "expression": "xsd",
+                    "language": "prefix"
+                  },
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "string"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "base",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "temperatureHigh"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "temp_high_c",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "datatype_literal",
+                "datatype": {
+                  "transformation": {
+                    "expression": "xsd",
+                    "language": "prefix"
+                  },
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "decimal"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "base",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "temperatureLow"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "temp_low_c",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "datatype_literal",
+                "datatype": {
+                  "transformation": {
+                    "expression": "xsd",
+                    "language": "prefix"
+                  },
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "decimal"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "subject": {
+        "transformation": {
+          "expression": "base",
+          "language": "prefix"
+        },
+        "valueSource": {
+          "columnName": "weather_id",
+          "source": "column"
+        }
+      },
+      "typeMappings": [
+        {
+          "transformation": {
+            "expression": "base",
+            "language": "prefix"
+          },
+          "valueSource": {
+            "source": "constant",
+            "constant": "Weather"
+          }
+        }
+      ]
+    },
+    {
+      "propertyMappings": [
+        {
+          "property": {
+            "transformation": {
+              "expression": "base",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "date"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "date",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "literal"
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "base",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "hasWeather"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "base",
+                "language": "prefix"
+              },
+              "valueSource": {
+                "columnName": "weather_id",
+                "source": "column"
+              },
+              "valueType": {
+                "propertyMappings": [],
+                "type": "iri",
+                "typeMappings": []
+              }
+            }
+          ]
+        }
+      ],
+      "subject": {
+        "transformation": {
+          "expression": "\"http://example.org/qsr_kg#\" + cells[\"date\"].value.md5()",
+          "language": "grel"
+        },
+        "valueSource": {
+          "source": "row_index"
+        }
+      },
+      "typeMappings": [
+        {
+          "transformation": {
+            "expression": "timeOnt",
+            "language": "prefix"
+          },
+          "valueSource": {
+            "source": "constant",
+            "constant": "BusinessDay"
+          }
+        }
+      ]
+    }
+  ]
+}

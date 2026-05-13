@@ -1,0 +1,413 @@
+@prefix : <http://example.org/qsr_kg#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix core: <http://example.org/qsr_kg/QSRCoreOntology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix events: <http://example.org/qsr_kg/QSREventsOntology#> .
+@prefix timeOnt: <http://example.org/qsr_kg/QSRTimeOntology#> .
+@prefix location: <http://example.org/qsr_kg/QSRLocationOntology#> .
+@prefix inventory: <http://example.org/qsr_kg/QSRInventoryOntology#> .
+@prefix promotions: <http://example.org/qsr_kg/QSRPromotionsOntology#> .
+@prefix competition: <http://example.org/qsr_kg/QSRCompetitionOntology#> .
+@prefix performance: <http://example.org/qsr_kg/QSRPerformanceOntology#> .
+@base <http://example.org/qsr_kg#> .
+
+<http://example.org/qsr_kg> rdf:type owl:Ontology ;
+                             owl:imports <http://example.org/qsr_kg/QSRCompetitionOntology> ,
+                                         <http://example.org/qsr_kg/QSRCoreOntology> ,
+                                         <http://example.org/qsr_kg/QSREventsOntology> ,
+                                         <http://example.org/qsr_kg/QSRInventoryOntology> ,
+                                         <http://example.org/qsr_kg/QSRLocationOntology> ,
+                                         <http://example.org/qsr_kg/QSRPerformanceOntology> ,
+                                         <http://example.org/qsr_kg/QSRPromotionsOntology> ,
+                                         <http://example.org/qsr_kg/QSRTimeOntology> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://example.org/qsr_kg/QSRCoreOntology#isDeliveryEnabled
+core:isDeliveryEnabled rdf:type owl:AnnotationProperty ;
+                       rdfs:domain core:Store .
+
+
+###  http://example.org/qsr_kg/QSRCoreOntology#isDriveThru
+core:isDriveThru rdf:type owl:AnnotationProperty ;
+                 rdfs:domain core:Store .
+
+
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://example.org/qsr_kg#hasDayOfWeek
+:hasDayOfWeek rdf:type owl:ObjectProperty ;
+              rdfs:domain timeOnt:BusinessDay ;
+              rdfs:range timeOnt:DayOfWeek .
+
+
+###  http://example.org/qsr_kg#hasOrderChannel
+:hasOrderChannel rdf:type owl:ObjectProperty ;
+                 rdfs:domain events:TransactionEvent ;
+                 rdfs:range :OrderChannel .
+
+
+###  http://example.org/qsr_kg#hasPaymentMethod
+:hasPaymentMethod rdf:type owl:ObjectProperty ;
+                  rdfs:domain events:TransactionEvent ;
+                  rdfs:range :PaymentMethod .
+
+
+###  http://example.org/qsr_kg#hasWeather
+:hasWeather rdf:type owl:ObjectProperty ;
+            rdfs:domain timeOnt:Day ;
+            rdfs:range :Weather .
+
+
+###  http://example.org/qsr_kg#isApplicableOn
+:isApplicableOn rdf:type owl:ObjectProperty ;
+                rdfs:domain promotions:Promotion ;
+                rdfs:range timeOnt:DayOfWeek .
+
+
+###  http://example.org/qsr_kg/QSREventsOntology#aggregatesOn
+events:aggregatesOn rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf events:occurredOn ;
+                    rdfs:domain events:SalesAggregation ;
+                    rdfs:range timeOnt:BusinessDay .
+
+
+###  http://example.org/qsr_kg/QSREventsOntology#isPartOf
+events:isPartOf rdfs:domain events:Event ;
+                rdfs:range events:Event ;
+                owl:propertyChainAxiom ( events:transactionOccuredOn
+                                         [ owl:inverseOf events:aggregatesOn
+                                         ]
+                                       ) .
+
+
+###  http://example.org/qsr_kg/QSREventsOntology#transactionOccuredOn
+events:transactionOccuredOn rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf events:occurredOn ;
+                            rdfs:domain events:TransactionEvent ;
+                            rdfs:range timeOnt:BusinessDay .
+
+
+###  http://example.org/qsr_kg/QSRInventoryOntology#hasInventoryItem
+inventory:hasInventoryItem rdf:type owl:ObjectProperty ;
+                           rdfs:domain events:InventorySnapshot ;
+                           rdfs:range inventory:InventoryItem .
+
+
+###  http://example.org/qsr_kg/QSRPromotionsOntology#hasEndingBusinessDay
+promotions:hasEndingBusinessDay rdf:type owl:ObjectProperty ;
+                                rdfs:subPropertyOf events:occurredOn ;
+                                rdfs:domain promotions:Promotion ;
+                                rdfs:range timeOnt:BusinessDay .
+
+
+###  http://example.org/qsr_kg/QSRPromotionsOntology#hasStartingBusinessDay
+promotions:hasStartingBusinessDay rdf:type owl:ObjectProperty ;
+                                  rdfs:subPropertyOf events:occurredOn ;
+                                  rdfs:domain promotions:Promotion ;
+                                  rdfs:range timeOnt:BusinessDay .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://example.org/qsr_kg#condition
+:condition rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Weather ;
+           rdfs:range xsd:string ;
+           rdfs:comment "weather condition Hot, Warm, etc" .
+
+
+###  http://example.org/qsr_kg#customerSatisfactionRating
+:customerSatisfactionRating rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf owl:topDataProperty ;
+                            rdfs:domain events:TransactionEvent ;
+                            rdfs:range xsd:integer .
+
+
+###  http://example.org/qsr_kg#date
+:date rdf:type owl:DatatypeProperty ;
+      rdfs:range xsd:string .
+
+
+###  http://example.org/qsr_kg#id
+:id rdf:type owl:DatatypeProperty ;
+    rdfs:subPropertyOf owl:topDataProperty ;
+    rdfs:comment "Unique Identifier of the entity" ;
+    rdfs:label "id" .
+
+
+###  http://example.org/qsr_kg#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf owl:topDataProperty ;
+      rdfs:comment "Nmae of the entity" ;
+      rdfs:label "name" .
+
+
+###  http://example.org/qsr_kg#orderWaitTime
+:orderWaitTime rdf:type owl:DatatypeProperty ;
+               rdfs:domain events:TransactionEvent ;
+               rdfs:range xsd:integer ;
+               rdfs:comment "Time in mins taken by the order to be successfully completed" .
+
+
+###  http://example.org/qsr_kg#temperatureHigh
+:temperatureHigh rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Weather ;
+                 rdfs:range xsd:decimal .
+
+
+###  http://example.org/qsr_kg#temperatureLow
+:temperatureLow rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Weather ;
+                rdfs:range xsd:decimal .
+
+
+###  http://example.org/qsr_kg#unitsOfMeasure
+:unitsOfMeasure rdf:type owl:DatatypeProperty ;
+                rdfs:domain inventory:InventoryItem ;
+                rdfs:range xsd:string .
+
+
+###  http://example.org/qsr_kg/QSRCoreOntology#revenueTarget
+core:revenueTarget rdf:type owl:DatatypeProperty ;
+                   rdfs:domain core:Store ;
+                   rdfs:range xsd:integer .
+
+
+###  http://example.org/qsr_kg/QSRInventoryOntology#reorderThreshold
+inventory:reorderThreshold rdf:type owl:DatatypeProperty ;
+                           rdfs:domain inventory:InventoryItem ;
+                           rdfs:range xsd:integer .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://dbpedia.org/ontology/City
+<http://dbpedia.org/ontology/City> rdf:type owl:Class ;
+                                   rdfs:subClassOf location:Location .
+
+
+###  http://dbpedia.org/ontology/Country
+<http://dbpedia.org/ontology/Country> rdf:type owl:Class ;
+                                      rdfs:subClassOf location:Location .
+
+
+###  http://example.org/qsr_kg#OrderChannel
+:OrderChannel rdf:type owl:Class .
+
+
+###  http://example.org/qsr_kg#PaymentMethod
+:PaymentMethod rdf:type owl:Class .
+
+
+###  http://example.org/qsr_kg#Weather
+:Weather rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :condition ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :temperatureHigh ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:decimal
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :temperatureLow ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:decimal
+                         ] .
+
+
+###  http://example.org/qsr_kg/QSRPromotionsOntology#PostPromotion
+promotions:PostPromotion rdf:type owl:Class ;
+                         rdfs:subClassOf promotions:PromotionPhase .
+
+
+###  http://example.org/qsr_kg/QSRPromotionsOntology#PrePromotion
+promotions:PrePromotion rdf:type owl:Class ;
+                        rdfs:subClassOf promotions:PromotionPhase .
+
+
+###  http://example.org/qsr_kg/QSRTimeOntology#BusinessDay
+timeOnt:BusinessDay rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                      owl:onProperty :date ;
+                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onDataRange xsd:string
+                                    ] .
+
+
+###  http://example.org/qsr_kg/QSRTimeOntology#Day
+timeOnt:Day rdfs:subClassOf timeOnt:TimeUnit .
+
+
+###  http://example.org/qsr_kg/QSRTimeOntology#DayOfWeek
+timeOnt:DayOfWeek rdf:type owl:Class ;
+                  rdfs:subClassOf timeOnt:Day .
+
+
+###  http://example.org/qsr_kg/QSRTimeOntology#Weekday
+timeOnt:Weekday owl:equivalentClass [ rdf:type owl:Class ;
+                                      owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :hasDayOfWeek ;
+                                                      owl:hasValue :Monday
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :hasDayOfWeek ;
+                                                      owl:hasValue :Sunday
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :hasDayOfWeek ;
+                                                      owl:hasValue :Thursday
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :hasDayOfWeek ;
+                                                      owl:hasValue :Tuesday
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :hasDayOfWeek ;
+                                                      owl:hasValue :Wednesday
+                                                    ]
+                                                  )
+                                    ] ;
+                owl:disjointWith timeOnt:Weekend .
+
+
+###  http://example.org/qsr_kg/QSRTimeOntology#Weekend
+timeOnt:Weekend owl:equivalentClass [ rdf:type owl:Class ;
+                                      owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :hasDayOfWeek ;
+                                                      owl:hasValue :Friday
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :hasDayOfWeek ;
+                                                      owl:hasValue :Saturday
+                                                    ]
+                                                  )
+                                    ] .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( events:InventorySnapshot
+                events:SalesAggregation
+                events:TransactionEvent
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+:p rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:sd rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:ed rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:x rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:y rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:bd rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:d rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "Promotional days" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> promotions:Promotion ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :p
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> promotions:hasStartingBusinessDay ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :p ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :sd
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> promotions:hasEndingBusinessDay ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :p ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :ed
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :date ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :sd ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> :x
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :date ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> :ed ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> :y
+                                                                                                 ] ;
+                                                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#classPredicate> timeOnt:BusinessDay ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument1> :bd
+                                                                                                            ] ;
+                                                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                             rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#propertyPredicate> :date ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument1> :bd ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument2> :d
+                                                                                                                       ] ;
+                                                                                                             rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                        rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#arguments> ( :d
+                                                                                                                                                                                 :x
+                                                                                                                                                                               )
+                                                                                                                                  ] ;
+                                                                                                                        rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                   rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThanOrEqual> ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#arguments> ( :d
+                                                                                                                                                                                            :y
+                                                                                                                                                                                          )
+                                                                                                                                             ] ;
+                                                                                                                                   rdf:rest rdf:nil
+                                                                                                                                 ]
+                                                                                                                      ]
+                                                                                                           ]
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> timeOnt:PromotionDay ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :bd
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

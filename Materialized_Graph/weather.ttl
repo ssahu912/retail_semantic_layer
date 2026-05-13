@@ -1,0 +1,822 @@
+@base <http://example.org/qsr_kg#> .
+@prefix events: <http://example.org/qsr_kg/QSREventsOntology#> .
+@prefix timeOnt: <http://example.org/qsr_kg/QSRTimeOntology#> .
+@prefix location: <http://example.org/qsr_kg/QSRLocationOntology#> .
+@prefix inventory: <http://example.org/qsr_kg/QSRInventoryOntology#> .
+@prefix promotions: <http://example.org/qsr_kg/QSRPromotionsOntology#> .
+@prefix competition: <http://example.org/qsr_kg/QSRCompetitionOntology#> .
+@prefix performance: <http://example.org/qsr_kg/QSRPerformanceOntology#> .
+@prefix core: <http://example.org/qsr_kg/QSRCoreOntology#> .
+@prefix base: <http://example.org/qsr_kg#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+base:WTH0001 a base:Weather;
+  base:condition "Hot";
+  base:temperatureHigh 35.8;
+  base:temperatureLow 20.1 .
+
+base:3dfeb9a1278a0489cf08b7b6c2844963 a timeOnt:BusinessDay;
+  base:date "2024-10-01";
+  base:hasWeather base:WTH0001 .
+
+base:WTH0002 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 32.5;
+  base:temperatureLow 21.7 .
+
+base:0fbf49975ff4668115d260023dc2a0a9 a timeOnt:BusinessDay;
+  base:date "2024-10-02";
+  base:hasWeather base:WTH0002 .
+
+base:WTH0003 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 33.2;
+  base:temperatureLow 22.6 .
+
+base:fdefd8cc22140ef060e884d11dca8527 a timeOnt:BusinessDay;
+  base:date "2024-10-03";
+  base:hasWeather base:WTH0003 .
+
+base:WTH0004 a base:Weather;
+  base:condition "Hot";
+  base:temperatureHigh 36.6;
+  base:temperatureLow 20.6 .
+
+base:0ca5ef3da2d5dc0f73a09dc797a819e8 a timeOnt:BusinessDay;
+  base:date "2024-10-04";
+  base:hasWeather base:WTH0004 .
+
+base:WTH0005 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 32.6;
+  base:temperatureLow 21.5 .
+
+base:c50e13521d483744fd3de2229d8d2f8b a timeOnt:BusinessDay;
+  base:date "2024-10-05";
+  base:hasWeather base:WTH0005 .
+
+base:WTH0006 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 34.8;
+  base:temperatureLow 20.5 .
+
+base:ca6503589aa63efdfe870f8ae311b68d a timeOnt:BusinessDay;
+  base:date "2024-10-06";
+  base:hasWeather base:WTH0006 .
+
+base:WTH0007 a base:Weather;
+  base:condition "Hot";
+  base:temperatureHigh 35.5;
+  base:temperatureLow 22.8 .
+
+base:359b0c959f665a7b3d54c3918d070030 a timeOnt:BusinessDay;
+  base:date "2024-10-07";
+  base:hasWeather base:WTH0007 .
+
+base:WTH0008 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 34.3;
+  base:temperatureLow 21.8 .
+
+base:3d8921a4858d8267c7aaacd5a49a1461 a timeOnt:BusinessDay;
+  base:date "2024-10-08";
+  base:hasWeather base:WTH0008 .
+
+base:WTH0009 a base:Weather;
+  base:condition "Hot";
+  base:temperatureHigh 37.6;
+  base:temperatureLow 22.6 .
+
+base:2285687869c54fdd9d23f3ce4d90ab1a a timeOnt:BusinessDay;
+  base:date "2024-10-09";
+  base:hasWeather base:WTH0009 .
+
+base:WTH0010 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 33.6;
+  base:temperatureLow 23.7 .
+
+base:b577c30749d6cd1bbe0858a1298c0395 a timeOnt:BusinessDay;
+  base:date "2024-10-10";
+  base:hasWeather base:WTH0010 .
+
+base:WTH0011 a base:Weather;
+  base:condition "Hot";
+  base:temperatureHigh 36.8;
+  base:temperatureLow 21.6 .
+
+base:2b30f411779ec8798bd918cd9ba02d35 a timeOnt:BusinessDay;
+  base:date "2024-10-11";
+  base:hasWeather base:WTH0011 .
+
+base:WTH0012 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 34.4;
+  base:temperatureLow 23.7 .
+
+base:2fdc466b5e776cd432405bd2c3bfb553 a timeOnt:BusinessDay;
+  base:date "2024-10-12";
+  base:hasWeather base:WTH0012 .
+
+base:WTH0013 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 33.6;
+  base:temperatureLow 22.3 .
+
+base:00d605bd5cc0e787001f985d5c0b5201 a timeOnt:BusinessDay;
+  base:date "2024-10-13";
+  base:hasWeather base:WTH0013 .
+
+base:WTH0014 a base:Weather;
+  base:condition "Hot";
+  base:temperatureHigh 36.5;
+  base:temperatureLow 23.4 .
+
+base:ca7c87209cd064a8077fd2ab7116d48a a timeOnt:BusinessDay;
+  base:date "2024-10-14";
+  base:hasWeather base:WTH0014 .
+
+base:WTH0015 a base:Weather;
+  base:condition "Hot";
+  base:temperatureHigh 35.6;
+  base:temperatureLow 21.9 .
+
+base:14535b4b322865943ac2ee2f4e8fca6b a timeOnt:BusinessDay;
+  base:date "2024-10-15";
+  base:hasWeather base:WTH0015 .
+
+base:WTH0016 a base:Weather;
+  base:condition "Hot";
+  base:temperatureHigh 36.5;
+  base:temperatureLow 23.1 .
+
+base:5afb51ef4f82fd8dc7ebdd886975e661 a timeOnt:BusinessDay;
+  base:date "2024-10-16";
+  base:hasWeather base:WTH0016 .
+
+base:WTH0017 a base:Weather;
+  base:condition "Hot";
+  base:temperatureHigh 37.3;
+  base:temperatureLow 21.1 .
+
+base:ade91b99c53d6e0aec6f066a3f864a28 a timeOnt:BusinessDay;
+  base:date "2024-10-17";
+  base:hasWeather base:WTH0017 .
+
+base:WTH0018 a base:Weather;
+  base:condition "Hot";
+  base:temperatureHigh 37.1;
+  base:temperatureLow 22.0 .
+
+base:20f6a17b4a46bafd901602911acd1159 a timeOnt:BusinessDay;
+  base:date "2024-10-18";
+  base:hasWeather base:WTH0018 .
+
+base:WTH0019 a base:Weather;
+  base:condition "Rainy";
+  base:temperatureHigh 37.5;
+  base:temperatureLow 22.4 .
+
+base:b325ec1c7ed8eda27fa773daf5ccf33a a timeOnt:BusinessDay;
+  base:date "2024-10-19";
+  base:hasWeather base:WTH0019 .
+
+base:WTH0020 a base:Weather;
+  base:condition "Hot";
+  base:temperatureHigh 37.7;
+  base:temperatureLow 20.3 .
+
+base:d365c6114b0db9bd28c58e7e9d6b9231 a timeOnt:BusinessDay;
+  base:date "2024-10-20";
+  base:hasWeather base:WTH0020 .
+
+base:WTH0021 a base:Weather;
+  base:condition "Hot";
+  base:temperatureHigh 37.7;
+  base:temperatureLow 20.7 .
+
+base:ac57a873f23e6ace339de270e116a70a a timeOnt:BusinessDay;
+  base:date "2024-10-21";
+  base:hasWeather base:WTH0021 .
+
+base:WTH0022 a base:Weather;
+  base:condition "Hot";
+  base:temperatureHigh 36.1;
+  base:temperatureLow 22.9 .
+
+base:be1259ffc7047b60de677699419ccccf a timeOnt:BusinessDay;
+  base:date "2024-10-22";
+  base:hasWeather base:WTH0022 .
+
+base:WTH0023 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 34.7;
+  base:temperatureLow 21.0 .
+
+base:be60d5acf94273e503e12944ba730d51 a timeOnt:BusinessDay;
+  base:date "2024-10-23";
+  base:hasWeather base:WTH0023 .
+
+base:WTH0024 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 32.0;
+  base:temperatureLow 22.8 .
+
+base:add7afc2829897f2a75a6af30a73209c a timeOnt:BusinessDay;
+  base:date "2024-10-24";
+  base:hasWeather base:WTH0024 .
+
+base:WTH0025 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 33.7;
+  base:temperatureLow 21.9 .
+
+base:657c1b48dcdc964fa5ccceb8c78cb520 a timeOnt:BusinessDay;
+  base:date "2024-10-25";
+  base:hasWeather base:WTH0025 .
+
+base:WTH0026 a base:Weather;
+  base:condition "Hot";
+  base:temperatureHigh 36.8;
+  base:temperatureLow 20.8 .
+
+base:40078c8cb5fab91df4315ede5c878ae1 a timeOnt:BusinessDay;
+  base:date "2024-10-26";
+  base:hasWeather base:WTH0026 .
+
+base:WTH0027 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 32.3;
+  base:temperatureLow 22.6 .
+
+base:8aa5c9ae2a8ec2f7abd70533727da835 a timeOnt:BusinessDay;
+  base:date "2024-10-27";
+  base:hasWeather base:WTH0027 .
+
+base:WTH0028 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 33.5;
+  base:temperatureLow 20.8 .
+
+base:528c065349d1db8dbb55d8b43f91c1c2 a timeOnt:BusinessDay;
+  base:date "2024-10-28";
+  base:hasWeather base:WTH0028 .
+
+base:WTH0029 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 34.7;
+  base:temperatureLow 23.4 .
+
+base:3577771fd8764e951b250b8657a0bf88 a timeOnt:BusinessDay;
+  base:date "2024-10-29";
+  base:hasWeather base:WTH0029 .
+
+base:WTH0030 a base:Weather;
+  base:condition "Hot";
+  base:temperatureHigh 37.6;
+  base:temperatureLow 23.4 .
+
+base:97239cc99b9fb354149be2696a045c0c a timeOnt:BusinessDay;
+  base:date "2024-10-30";
+  base:hasWeather base:WTH0030 .
+
+base:WTH0031 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 33.0;
+  base:temperatureLow 20.0 .
+
+base:51fcad48f76a22206b5b5e1dd5df4507 a timeOnt:BusinessDay;
+  base:date "2024-10-31";
+  base:hasWeather base:WTH0031 .
+
+base:WTH0032 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 31.0;
+  base:temperatureLow 16.2 .
+
+base:1b86d535c6882b0f1896344e5008658d a timeOnt:BusinessDay;
+  base:date "2024-11-01";
+  base:hasWeather base:WTH0032 .
+
+base:WTH0033 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 29.4;
+  base:temperatureLow 14.2 .
+
+base:3cd770bc1032e2226464f80e4093d560 a timeOnt:BusinessDay;
+  base:date "2024-11-02";
+  base:hasWeather base:WTH0033 .
+
+base:WTH0034 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 25.9;
+  base:temperatureLow 17.8 .
+
+base:ca385f8a90dc256c71e43f23f9b870f2 a timeOnt:BusinessDay;
+  base:date "2024-11-03";
+  base:hasWeather base:WTH0034 .
+
+base:WTH0035 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 27.4;
+  base:temperatureLow 17.8 .
+
+base:9b86bf666af0974ec7532ac0aee5072f a timeOnt:BusinessDay;
+  base:date "2024-11-04";
+  base:hasWeather base:WTH0035 .
+
+base:WTH0036 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 28.9;
+  base:temperatureLow 16.3 .
+
+base:55ac7856557b16dc32a22e2e9104c331 a timeOnt:BusinessDay;
+  base:date "2024-11-05";
+  base:hasWeather base:WTH0036 .
+
+base:WTH0037 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 25.8;
+  base:temperatureLow 16.6 .
+
+base:e9598d5e9a5569d14b08ccf7529f85fa a timeOnt:BusinessDay;
+  base:date "2024-11-06";
+  base:hasWeather base:WTH0037 .
+
+base:WTH0038 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 31.0;
+  base:temperatureLow 14.3 .
+
+base:723995a6f3cb2063af867a2c518727bf a timeOnt:BusinessDay;
+  base:date "2024-11-07";
+  base:hasWeather base:WTH0038 .
+
+base:WTH0039 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 27.2;
+  base:temperatureLow 14.6 .
+
+base:f1e97fa3005ee6331d67ab51789d92f9 a timeOnt:BusinessDay;
+  base:date "2024-11-08";
+  base:hasWeather base:WTH0039 .
+
+base:WTH0040 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 26.8;
+  base:temperatureLow 16.7 .
+
+base:63fcc38e24b9d4b61d9b74dd7dde8b7a a timeOnt:BusinessDay;
+  base:date "2024-11-09";
+  base:hasWeather base:WTH0040 .
+
+base:WTH0041 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 28.6;
+  base:temperatureLow 16.9 .
+
+base:9f2c6c1aff726f040695dfeb1c049cd7 a timeOnt:BusinessDay;
+  base:date "2024-11-10";
+  base:hasWeather base:WTH0041 .
+
+base:WTH0042 a base:Weather;
+  base:condition "Rainy";
+  base:temperatureHigh 25.6;
+  base:temperatureLow 15.7 .
+
+base:f462230f4e4289784e8469f2babda8fd a timeOnt:BusinessDay;
+  base:date "2024-11-11";
+  base:hasWeather base:WTH0042 .
+
+base:WTH0043 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 28.3;
+  base:temperatureLow 15.7 .
+
+base:094b47b310938db661f77b9e561ff688 a timeOnt:BusinessDay;
+  base:date "2024-11-12";
+  base:hasWeather base:WTH0043 .
+
+base:WTH0044 a base:Weather;
+  base:condition "Rainy";
+  base:temperatureHigh 28.5;
+  base:temperatureLow 14.6 .
+
+base:760c821759044c747a40acd4332e2df4 a timeOnt:BusinessDay;
+  base:date "2024-11-13";
+  base:hasWeather base:WTH0044 .
+
+base:WTH0045 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 29.0;
+  base:temperatureLow 15.4 .
+
+base:941e22d8a4f291e3ef640e97c4354a02 a timeOnt:BusinessDay;
+  base:date "2024-11-14";
+  base:hasWeather base:WTH0045 .
+
+base:WTH0046 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 30.2;
+  base:temperatureLow 17.9 .
+
+base:8d93d08547e13457432f51b987f473d4 a timeOnt:BusinessDay;
+  base:date "2024-11-15";
+  base:hasWeather base:WTH0046 .
+
+base:WTH0047 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 29.7;
+  base:temperatureLow 15.6 .
+
+base:385383b19c9265cbc6dfc926f42a9a47 a timeOnt:BusinessDay;
+  base:date "2024-11-16";
+  base:hasWeather base:WTH0047 .
+
+base:WTH0048 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 26.3;
+  base:temperatureLow 17.3 .
+
+base:3b10b95c944456594b42d9fb2227f130 a timeOnt:BusinessDay;
+  base:date "2024-11-17";
+  base:hasWeather base:WTH0048 .
+
+base:WTH0049 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 27.4;
+  base:temperatureLow 15.1 .
+
+base:73c17a0ded536e80dd7014c9d445ee31 a timeOnt:BusinessDay;
+  base:date "2024-11-18";
+  base:hasWeather base:WTH0049 .
+
+base:WTH0050 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 29.1;
+  base:temperatureLow 17.4 .
+
+base:fa05f0ecfc8453646c28776e3eb0cfa1 a timeOnt:BusinessDay;
+  base:date "2024-11-19";
+  base:hasWeather base:WTH0050 .
+
+base:WTH0051 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 25.2;
+  base:temperatureLow 16.4 .
+
+base:1511cb00613e8ffa4ea4c2934d59b0c4 a timeOnt:BusinessDay;
+  base:date "2024-11-20";
+  base:hasWeather base:WTH0051 .
+
+base:WTH0052 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 25.7;
+  base:temperatureLow 17.6 .
+
+base:9913f136f555e8d180895e7b13f3cc29 a timeOnt:BusinessDay;
+  base:date "2024-11-21";
+  base:hasWeather base:WTH0052 .
+
+base:WTH0053 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 29.1;
+  base:temperatureLow 17.8 .
+
+base:78437fe06118302ab9269c8b74633a45 a timeOnt:BusinessDay;
+  base:date "2024-11-22";
+  base:hasWeather base:WTH0053 .
+
+base:WTH0054 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 30.1;
+  base:temperatureLow 16.9 .
+
+base:dd29c402bf731c616c8e1afe5f7faf13 a timeOnt:BusinessDay;
+  base:date "2024-11-23";
+  base:hasWeather base:WTH0054 .
+
+base:WTH0055 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 28.3;
+  base:temperatureLow 14.8 .
+
+base:3260ad7ef0f55524eb46b16414cb560c a timeOnt:BusinessDay;
+  base:date "2024-11-24";
+  base:hasWeather base:WTH0055 .
+
+base:WTH0056 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 28.3;
+  base:temperatureLow 14.0 .
+
+base:04d6c157a7ca8f8016dd416e9ca2811f a timeOnt:BusinessDay;
+  base:date "2024-11-25";
+  base:hasWeather base:WTH0056 .
+
+base:WTH0057 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 27.7;
+  base:temperatureLow 16.7 .
+
+base:f44459cbd0dfad98908de86222f60dfc a timeOnt:BusinessDay;
+  base:date "2024-11-26";
+  base:hasWeather base:WTH0057 .
+
+base:WTH0058 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 28.8;
+  base:temperatureLow 15.3 .
+
+base:2fed2af6f4ac6887309873c6d6f5ad4c a timeOnt:BusinessDay;
+  base:date "2024-11-27";
+  base:hasWeather base:WTH0058 .
+
+base:WTH0059 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 26.5;
+  base:temperatureLow 15.9 .
+
+base:8dea283c95738e8618feacd3613ef614 a timeOnt:BusinessDay;
+  base:date "2024-11-28";
+  base:hasWeather base:WTH0059 .
+
+base:WTH0060 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 27.3;
+  base:temperatureLow 15.6 .
+
+base:b3897bff8ea3cc7f99549fa31f8d0472 a timeOnt:BusinessDay;
+  base:date "2024-11-29";
+  base:hasWeather base:WTH0060 .
+
+base:WTH0061 a base:Weather;
+  base:condition "Warm";
+  base:temperatureHigh 26.1;
+  base:temperatureLow 17.8 .
+
+base:5edc37707cdfc2002027b1e0b11584f0 a timeOnt:BusinessDay;
+  base:date "2024-11-30";
+  base:hasWeather base:WTH0061 .
+
+base:WTH0062 a base:Weather;
+  base:condition "Pleasant";
+  base:temperatureHigh 21.7;
+  base:temperatureLow 13.2 .
+
+base:80d5de3a419a69be5ba960bb0fef9a1d a timeOnt:BusinessDay;
+  base:date "2024-12-01";
+  base:hasWeather base:WTH0062 .
+
+base:WTH0063 a base:Weather;
+  base:condition "Pleasant";
+  base:temperatureHigh 22.7;
+  base:temperatureLow 12.9 .
+
+base:4f76fc777dbfe60913ac6f49a713325e a timeOnt:BusinessDay;
+  base:date "2024-12-02";
+  base:hasWeather base:WTH0063 .
+
+base:WTH0064 a base:Weather;
+  base:condition "Pleasant";
+  base:temperatureHigh 24.2;
+  base:temperatureLow 11.8 .
+
+base:402753af5e0286ebca562300607651d1 a timeOnt:BusinessDay;
+  base:date "2024-12-03";
+  base:hasWeather base:WTH0064 .
+
+base:WTH0065 a base:Weather;
+  base:condition "Pleasant";
+  base:temperatureHigh 20.6;
+  base:temperatureLow 10.3 .
+
+base:e6b9d5a22c79c6e4bde01404152f6a3a a timeOnt:BusinessDay;
+  base:date "2024-12-04";
+  base:hasWeather base:WTH0065 .
+
+base:WTH0066 a base:Weather;
+  base:condition "Pleasant";
+  base:temperatureHigh 19.8;
+  base:temperatureLow 10.9 .
+
+base:6b46f8e5a2f754bbc65a63909a0c1585 a timeOnt:BusinessDay;
+  base:date "2024-12-05";
+  base:hasWeather base:WTH0066 .
+
+base:WTH0067 a base:Weather;
+  base:condition "Pleasant";
+  base:temperatureHigh 21.8;
+  base:temperatureLow 10.2 .
+
+base:1d165b7c8dbf1f8f836b4717a154429d a timeOnt:BusinessDay;
+  base:date "2024-12-06";
+  base:hasWeather base:WTH0067 .
+
+base:WTH0068 a base:Weather;
+  base:condition "Pleasant";
+  base:temperatureHigh 21.3;
+  base:temperatureLow 10.0 .
+
+base:035e711aaa29a9632f67428b85c43fb3 a timeOnt:BusinessDay;
+  base:date "2024-12-07";
+  base:hasWeather base:WTH0068 .
+
+base:WTH0069 a base:Weather;
+  base:condition "Pleasant";
+  base:temperatureHigh 22.3;
+  base:temperatureLow 12.4 .
+
+base:02aba98ffebc7848559dbd36b6e7db46 a timeOnt:BusinessDay;
+  base:date "2024-12-08";
+  base:hasWeather base:WTH0069 .
+
+base:WTH0070 a base:Weather;
+  base:condition "Pleasant";
+  base:temperatureHigh 21.0;
+  base:temperatureLow 12.7 .
+
+base:0b84586616b458e327ab9074a816575f a timeOnt:BusinessDay;
+  base:date "2024-12-09";
+  base:hasWeather base:WTH0070 .
+
+base:WTH0071 a base:Weather;
+  base:condition "Pleasant";
+  base:temperatureHigh 19.2;
+  base:temperatureLow 11.6 .
+
+base:698c6a41754d31d968a6f672ba40381a a timeOnt:BusinessDay;
+  base:date "2024-12-10";
+  base:hasWeather base:WTH0071 .
+
+base:WTH0072 a base:Weather;
+  base:condition "Pleasant";
+  base:temperatureHigh 20.1;
+  base:temperatureLow 11.0 .
+
+base:25d34630876617e030af019a0e80f862 a timeOnt:BusinessDay;
+  base:date "2024-12-11";
+  base:hasWeather base:WTH0072 .
+
+base:WTH0073 a base:Weather;
+  base:condition "Pleasant";
+  base:temperatureHigh 20.7;
+  base:temperatureLow 13.8 .
+
+base:9e5752c0771e745aa67cad9225cf03f0 a timeOnt:BusinessDay;
+  base:date "2024-12-12";
+  base:hasWeather base:WTH0073 .
+
+base:WTH0074 a base:Weather;
+  base:condition "Pleasant";
+  base:temperatureHigh 19.3;
+  base:temperatureLow 13.8 .
+
+base:53d70159c12ccbf7dc5db9ca2779ef08 a timeOnt:BusinessDay;
+  base:date "2024-12-13";
+  base:hasWeather base:WTH0074 .
+
+base:WTH0075 a base:Weather;
+  base:condition "Pleasant";
+  base:temperatureHigh 20.2;
+  base:temperatureLow 10.1 .
+
+base:1595c4fa6f7a4494dd1cb0f73197117a a timeOnt:BusinessDay;
+  base:date "2024-12-14";
+  base:hasWeather base:WTH0075 .
+
+base:WTH0076 a base:Weather;
+  base:condition "Pleasant";
+  base:temperatureHigh 21.8;
+  base:temperatureLow 11.0 .
+
+base:504b8d54501f263420be384af3445978 a timeOnt:BusinessDay;
+  base:date "2024-12-15";
+  base:hasWeather base:WTH0076 .
+
+base:WTH0077 a base:Weather;
+  base:condition "Pleasant";
+  base:temperatureHigh 24.8;
+  base:temperatureLow 10.4 .
+
+base:da168f2423762cd6d212d2b6c50a48df a timeOnt:BusinessDay;
+  base:date "2024-12-16";
+  base:hasWeather base:WTH0077 .
+
+base:WTH0078 a base:Weather;
+  base:condition "Pleasant";
+  base:temperatureHigh 20.2;
+  base:temperatureLow 12.4 .
+
+base:d5eff4c897d132f8b480644188673e53 a timeOnt:BusinessDay;
+  base:date "2024-12-17";
+  base:hasWeather base:WTH0078 .
+
+base:WTH0079 a base:Weather;
+  base:condition "Pleasant";
+  base:temperatureHigh 23.7;
+  base:temperatureLow 11.4 .
+
+base:c2a776f97547a1f42c01489ae4c3093a a timeOnt:BusinessDay;
+  base:date "2024-12-18";
+  base:hasWeather base:WTH0079 .
+
+base:WTH0080 a base:Weather;
+  base:condition "Pleasant";
+  base:temperatureHigh 24.1;
+  base:temperatureLow 13.3 .
+
+base:3d4f25a6c633a2122dc6aed0565ac0d0 a timeOnt:BusinessDay;
+  base:date "2024-12-19";
+  base:hasWeather base:WTH0080 .
+
+base:WTH0081 a base:Weather;
+  base:condition "Pleasant";
+  base:temperatureHigh 20.1;
+  base:temperatureLow 12.1 .
+
+base:a70ac2f3e9ccfc042d1f43cf96133d91 a timeOnt:BusinessDay;
+  base:date "2024-12-20";
+  base:hasWeather base:WTH0081 .
+
+base:WTH0082 a base:Weather;
+  base:condition "Pleasant";
+  base:temperatureHigh 22.6;
+  base:temperatureLow 11.3 .
+
+base:f94b963c1ad1de1101b63fd76ab87b28 a timeOnt:BusinessDay;
+  base:date "2024-12-21";
+  base:hasWeather base:WTH0082 .
+
+base:WTH0083 a base:Weather;
+  base:condition "Pleasant";
+  base:temperatureHigh 23.5;
+  base:temperatureLow 12.3 .
+
+base:439b20a26452e0b0dd3e22edd86cd4f5 a timeOnt:BusinessDay;
+  base:date "2024-12-22";
+  base:hasWeather base:WTH0083 .
+
+base:WTH0084 a base:Weather;
+  base:condition "Pleasant";
+  base:temperatureHigh 21.1;
+  base:temperatureLow 11.0 .
+
+base:a10567df7eebdcaf237dd69613d6cee9 a timeOnt:BusinessDay;
+  base:date "2024-12-23";
+  base:hasWeather base:WTH0084 .
+
+base:WTH0085 a base:Weather;
+  base:condition "Pleasant";
+  base:temperatureHigh 19.5;
+  base:temperatureLow 12.9 .
+
+base:aa18e6e176158eecbd815f7c8e7a41b9 a timeOnt:BusinessDay;
+  base:date "2024-12-24";
+  base:hasWeather base:WTH0085 .
+
+base:WTH0086 a base:Weather;
+  base:condition "Pleasant";
+  base:temperatureHigh 21.7;
+  base:temperatureLow 10.1 .
+
+base:9d6c6b804ca90923c9d2b25d63499fb5 a timeOnt:BusinessDay;
+  base:date "2024-12-25";
+  base:hasWeather base:WTH0086 .
+
+base:WTH0087 a base:Weather;
+  base:condition "Pleasant";
+  base:temperatureHigh 21.8;
+  base:temperatureLow 12.1 .
+
+base:4b62de32582f8582b2df55c221906afe a timeOnt:BusinessDay;
+  base:date "2024-12-26";
+  base:hasWeather base:WTH0087 .
+
+base:WTH0088 a base:Weather;
+  base:condition "Pleasant";
+  base:temperatureHigh 20.6;
+  base:temperatureLow 11.0 .
+
+base:625a7d47406e94c418e409362e0641ed a timeOnt:BusinessDay;
+  base:date "2024-12-27";
+  base:hasWeather base:WTH0088 .
+
+base:WTH0089 a base:Weather;
+  base:condition "Pleasant";
+  base:temperatureHigh 20.1;
+  base:temperatureLow 10.9 .
+
+base:e047381f8feeb53547b2aa4196c6bec7 a timeOnt:BusinessDay;
+  base:date "2024-12-28";
+  base:hasWeather base:WTH0089 .
+
+base:WTH0090 a base:Weather;
+  base:condition "Pleasant";
+  base:temperatureHigh 24.0;
+  base:temperatureLow 11.2 .
+
+base:454f5ceb8ac64f57018ee0db5a3f9205 a timeOnt:BusinessDay;
+  base:date "2024-12-29";
+  base:hasWeather base:WTH0090 .

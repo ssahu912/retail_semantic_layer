@@ -1,0 +1,138 @@
+@base <http://example.org/qsr_kg#> .
+@prefix events: <http://example.org/qsr_kg/QSREventsOntology#> .
+@prefix timeOnt: <http://example.org/qsr_kg/QSRTimeOntology#> .
+@prefix location: <http://example.org/qsr_kg/QSRLocationOntology#> .
+@prefix inventory: <http://example.org/qsr_kg/QSRInventoryOntology#> .
+@prefix promotions: <http://example.org/qsr_kg/QSRPromotionsOntology#> .
+@prefix competition: <http://example.org/qsr_kg/QSRCompetitionOntology#> .
+@prefix performance: <http://example.org/qsr_kg/QSRPerformanceOntology#> .
+@prefix core: <http://example.org/qsr_kg/QSRCoreOntology#> .
+@prefix base: <http://example.org/qsr_kg#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+promotions:PROMO001 a promotions:Promotion;
+  rdfs:label "Weekend Family Feast";
+  promotions:hasStartingBusinessDay base:0ca5ef3da2d5dc0f73a09dc797a819e8;
+  promotions:hasEndingBusinessDay base:625a7d47406e94c418e409362e0641ed;
+  rdfs:comment "2 Burgers + 2 Sides + 2 Drinks";
+  events:forStore core:S001, core:S002, core:S003, core:S004, core:S005;
+  base:isApplicableOn base:Friday, base:Saturday .
+
+base:0ca5ef3da2d5dc0f73a09dc797a819e8 base:date "2024-10-04" .
+
+base:625a7d47406e94c418e409362e0641ed base:date "2024-12-27" .
+
+promotions:PROMO002 a promotions:Promotion;
+  rdfs:label "Student Discount";
+  promotions:hasStartingBusinessDay base:3dfeb9a1278a0489cf08b7b6c2844963;
+  promotions:hasEndingBusinessDay base:a448e7af4416d615121f68d83c954ec5;
+  rdfs:comment "Show student ID";
+  events:forStore core:S001, core:S003, core:S005;
+  base:isApplicableOn base:Monday, base:Tuesday, base:Wednesday, base:Thursday, base:Sunday .
+
+base:3dfeb9a1278a0489cf08b7b6c2844963 base:date "2024-10-01" .
+
+base:a448e7af4416d615121f68d83c954ec5 base:date "2024-12-31" .
+
+promotions:PROMO003 a promotions:Promotion;
+  rdfs:label "Happy Hour Combo";
+  promotions:hasStartingBusinessDay base:3dfeb9a1278a0489cf08b7b6c2844963;
+  promotions:hasEndingBusinessDay base:a448e7af4416d615121f68d83c954ec5;
+  rdfs:comment "Burger + Fries + Drink (2-5 PM)";
+  events:forStore core:S001, core:S002, core:S003, core:S004, core:S005;
+  base:isApplicableOn base:Monday, base:Tuesday, base:Wednesday, base:Thursday, base:Sunday .
+
+promotions:PROMO004 a promotions:Promotion;
+  rdfs:label "National Day Special";
+  promotions:hasStartingBusinessDay base:e22d6e10000f18da91266f085a8fa4ce;
+  promotions:hasEndingBusinessDay base:b51a0f9ac6648178482990294fb95131;
+  rdfs:comment "Saudi National Day celebration";
+  events:forStore core:S001, core:S002, core:S003, core:S004, core:S005;
+  base:isApplicableOn base:Friday, base:Saturday, base:Sunday, base:Monday, base:Tuesday,
+    base:Wednesday, base:Thursday .
+
+base:e22d6e10000f18da91266f085a8fa4ce base:date "2024-09-20" .
+
+base:b51a0f9ac6648178482990294fb95131 base:date "2024-09-25" .
+
+promotions:PROMO005 a promotions:Promotion;
+  rdfs:label "Buy 2 Get 1 Free";
+  promotions:hasStartingBusinessDay base:1b86d535c6882b0f1896344e5008658d;
+  promotions:hasEndingBusinessDay base:8d93d08547e13457432f51b987f473d4;
+  rdfs:comment "Buy 2 burgers, get 1 free";
+  events:forStore core:S002, core:S004, core:S005;
+  base:isApplicableOn base:Friday, base:Saturday .
+
+base:1b86d535c6882b0f1896344e5008658d base:date "2024-11-01" .
+
+base:8d93d08547e13457432f51b987f473d4 base:date "2024-11-15" .
+
+promotions:PROMO006 a promotions:Promotion;
+  rdfs:label "Delivery Special";
+  promotions:hasStartingBusinessDay base:14535b4b322865943ac2ee2f4e8fca6b;
+  promotions:hasEndingBusinessDay base:a448e7af4416d615121f68d83c954ec5;
+  rdfs:comment "Free delivery on orders above 50 SAR";
+  events:forStore core:S001, core:S002, core:S003, core:S004, core:S005;
+  base:isApplicableOn base:Sunday, base:Monday, base:Tuesday, base:Wednesday, base:Thursday .
+
+base:14535b4b322865943ac2ee2f4e8fca6b base:date "2024-10-15" .
+
+promotions:PROMO007 a promotions:Promotion;
+  rdfs:label "Lunch Express";
+  promotions:hasStartingBusinessDay base:3dfeb9a1278a0489cf08b7b6c2844963;
+  promotions:hasEndingBusinessDay base:a448e7af4416d615121f68d83c954ec5;
+  rdfs:comment "Quick lunch combo (11 AM - 2 PM)";
+  events:forStore core:S001, core:S003;
+  base:isApplicableOn base:Sunday, base:Monday, base:Tuesday, base:Wednesday, base:Thursday .
+
+promotions:PROMO008 a promotions:Promotion;
+  rdfs:label "Kids Eat Free";
+  promotions:hasStartingBusinessDay base:1511cb00613e8ffa4ea4c2934d59b0c4;
+  promotions:hasEndingBusinessDay base:a70ac2f3e9ccfc042d1f43cf96133d91;
+  rdfs:comment "Free kids meal with adult combo purchase";
+  events:forStore core:S002, core:S005;
+  base:isApplicableOn base:Friday, base:Saturday .
+
+base:1511cb00613e8ffa4ea4c2934d59b0c4 base:date "2024-11-20" .
+
+base:a70ac2f3e9ccfc042d1f43cf96133d91 base:date "2024-12-20" .
+
+promotions:PROMO009 a promotions:Promotion;
+  rdfs:label "Mega Meal Deal";
+  promotions:hasStartingBusinessDay base:80d5de3a419a69be5ba960bb0fef9a1d;
+  promotions:hasEndingBusinessDay base:a448e7af4416d615121f68d83c954ec5;
+  rdfs:comment "Family meal for 4 people";
+  events:forStore core:S001, core:S002, core:S003, core:S004, core:S005;
+  base:isApplicableOn base:Friday, base:Saturday, base:Sunday, base:Monday, base:Tuesday,
+    base:Wednesday, base:Thursday .
+
+base:80d5de3a419a69be5ba960bb0fef9a1d base:date "2024-12-01" .
+
+promotions:PROMO010 a promotions:Promotion;
+  rdfs:label "Late Night Special";
+  promotions:hasStartingBusinessDay base:3dfeb9a1278a0489cf08b7b6c2844963;
+  promotions:hasEndingBusinessDay base:a448e7af4416d615121f68d83c954ec5;
+  rdfs:comment "20% off after 10 PM";
+  events:forStore core:S001, core:S002, core:S004;
+  base:isApplicableOn base:Friday, base:Saturday, base:Sunday, base:Monday, base:Tuesday,
+    base:Wednesday, base:Thursday .
+
+promotions:PROMO011 a promotions:Promotion;
+  rdfs:label "Coffee & Dessert";
+  promotions:hasStartingBusinessDay base:1b86d535c6882b0f1896344e5008658d;
+  promotions:hasEndingBusinessDay base:a448e7af4416d615121f68d83c954ec5;
+  rdfs:comment "Coffee + Any Dessert combo";
+  events:forStore core:S001, core:S002, core:S003, core:S004, core:S005;
+  base:isApplicableOn base:Sunday, base:Monday, base:Tuesday, base:Wednesday, base:Thursday .
+
+promotions:PROMO012 a promotions:Promotion;
+  rdfs:label "App Exclusive Deal";
+  promotions:hasStartingBusinessDay base:b577c30749d6cd1bbe0858a1298c0395;
+  promotions:hasEndingBusinessDay base:a448e7af4416d615121f68d83c954ec5;
+  rdfs:comment "Order via app for 15% discount";
+  events:forStore core:S001, core:S002, core:S003, core:S004, core:S005;
+  base:isApplicableOn base:Friday, base:Saturday, base:Sunday, base:Monday, base:Tuesday,
+    base:Wednesday, base:Thursday .
+
+base:b577c30749d6cd1bbe0858a1298c0395 base:date "2024-10-10" .

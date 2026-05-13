@@ -1,0 +1,163 @@
+{
+  "baseIRI": "http://example.org/qsr_kg#",
+  "namespaces": {
+    "events": "http://example.org/qsr_kg/QSREventsOntology#",
+    "timeOnt": "http://example.org/qsr_kg/QSRTimeOntology#",
+    "location": "http://example.org/qsr_kg/QSRLocationOntology#",
+    "inventory": "http://example.org/qsr_kg/QSRInventoryOntology#",
+    "promotions": "http://example.org/qsr_kg/QSRPromotionsOntology#",
+    "competition": "http://example.org/qsr_kg/QSRCompetitionOntology#",
+    "performance": "http://example.org/qsr_kg/QSRPerformanceOntology#",
+    "core": "http://example.org/qsr_kg/QSRCoreOntology#",
+    "base": "http://example.org/qsr_kg#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "subjectMappings": [
+    {
+      "propertyMappings": [
+        {
+          "property": {
+            "transformation": {
+              "expression": "location",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "hasPOICategory"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "location",
+                "language": "prefix"
+              },
+              "valueSource": {
+                "columnName": "poi_type",
+                "source": "column"
+              },
+              "valueType": {
+                "propertyMappings": [],
+                "type": "iri",
+                "typeMappings": []
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "rdfs",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "label"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "poi_name",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "literal"
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "rdfs",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "comment"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "description",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "literal"
+              }
+            }
+          ]
+        }
+      ],
+      "subject": {
+        "transformation": {
+          "expression": "location",
+          "language": "prefix"
+        },
+        "valueSource": {
+          "columnName": "poi_id",
+          "source": "column"
+        }
+      },
+      "typeMappings": [
+        {
+          "transformation": {
+            "expression": "location",
+            "language": "prefix"
+          },
+          "valueSource": {
+            "source": "constant",
+            "constant": "PointOfInterest"
+          }
+        }
+      ]
+    },
+    {
+      "propertyMappings": [
+        {
+          "property": {
+            "transformation": {
+              "expression": "location",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "near"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "location",
+                "language": "prefix"
+              },
+              "valueSource": {
+                "columnName": "poi_id",
+                "source": "column"
+              },
+              "valueType": {
+                "propertyMappings": [],
+                "type": "iri",
+                "typeMappings": []
+              }
+            }
+          ]
+        }
+      ],
+      "subject": {
+        "transformation": {
+          "expression": "core",
+          "language": "prefix"
+        },
+        "valueSource": {
+          "columnName": "nearest_store_id",
+          "source": "column"
+        }
+      },
+      "typeMappings": []
+    }
+  ]
+}

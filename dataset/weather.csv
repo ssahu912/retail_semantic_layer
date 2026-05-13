@@ -1,0 +1,91 @@
+weather_id,date,city,temp_high_c,temp_low_c,humidity_pct,rainfall_mm,wind_speed_kmh,cloud_cover,conditions,visibility_km,uv_index
+WTH0001,2024-10-01,Riyadh,35.8,20.1,23,0.0,9,Clear,Hot,9.4,7
+WTH0002,2024-10-02,Riyadh,32.5,21.7,15,0.0,12,Cloudy,Warm,9.2,7
+WTH0003,2024-10-03,Riyadh,33.2,22.6,32,0.0,19,Cloudy,Warm,8.6,3
+WTH0004,2024-10-04,Riyadh,36.6,20.6,28,0.0,9,Clear,Hot,9.9,5
+WTH0005,2024-10-05,Riyadh,32.6,21.5,26,0.0,24,Clear,Warm,9.6,8
+WTH0006,2024-10-06,Riyadh,34.8,20.5,27,0.0,14,Cloudy,Warm,9.8,5
+WTH0007,2024-10-07,Riyadh,35.5,22.8,16,0.0,14,Clear,Hot,9.7,3
+WTH0008,2024-10-08,Riyadh,34.3,21.8,26,0.0,16,Clear,Warm,9.3,8
+WTH0009,2024-10-09,Riyadh,37.6,22.6,34,0.0,22,Clear,Hot,8.3,6
+WTH0010,2024-10-10,Riyadh,33.6,23.7,32,0.0,15,Clear,Warm,8.5,3
+WTH0011,2024-10-11,Riyadh,36.8,21.6,17,0.0,23,Clear,Hot,8.4,6
+WTH0012,2024-10-12,Riyadh,34.4,23.7,29,0.0,9,Clear,Warm,9.5,7
+WTH0013,2024-10-13,Riyadh,33.6,22.3,33,0.0,12,Clear,Warm,9.0,3
+WTH0014,2024-10-14,Riyadh,36.5,23.4,19,0.0,18,Cloudy,Hot,8.1,6
+WTH0015,2024-10-15,Riyadh,35.6,21.9,23,0.0,5,Clear,Hot,9.4,7
+WTH0016,2024-10-16,Riyadh,36.5,23.1,25,0.0,18,Clear,Hot,8.9,8
+WTH0017,2024-10-17,Riyadh,37.3,21.1,31,0.0,21,Clear,Hot,9.7,5
+WTH0018,2024-10-18,Riyadh,37.1,22.0,21,0.0,10,Cloudy,Hot,9.9,7
+WTH0019,2024-10-19,Riyadh,37.5,22.4,30,4.7,14,Clear,Rainy,8.1,3
+WTH0020,2024-10-20,Riyadh,37.7,20.3,30,0.0,22,Clear,Hot,8.3,6
+WTH0021,2024-10-21,Riyadh,37.7,20.7,31,0.0,18,Clear,Hot,9.9,8
+WTH0022,2024-10-22,Riyadh,36.1,22.9,27,0.0,25,Clear,Hot,8.9,7
+WTH0023,2024-10-23,Riyadh,34.7,21.0,17,0.0,23,Cloudy,Warm,8.5,4
+WTH0024,2024-10-24,Riyadh,32.0,22.8,16,0.0,6,Clear,Warm,8.1,4
+WTH0025,2024-10-25,Riyadh,33.7,21.9,32,0.0,23,Cloudy,Warm,8.9,6
+WTH0026,2024-10-26,Riyadh,36.8,20.8,18,0.0,16,Partly Cloudy,Hot,8.8,8
+WTH0027,2024-10-27,Riyadh,32.3,22.6,35,0.0,17,Clear,Warm,9.6,3
+WTH0028,2024-10-28,Riyadh,33.5,20.8,29,0.0,10,Clear,Warm,8.9,3
+WTH0029,2024-10-29,Riyadh,34.7,23.4,32,0.0,25,Cloudy,Warm,9.7,3
+WTH0030,2024-10-30,Riyadh,37.6,23.4,20,0.0,20,Clear,Hot,9.7,3
+WTH0031,2024-10-31,Riyadh,33.0,20.0,27,0.0,19,Clear,Warm,8.8,8
+WTH0032,2024-11-01,Riyadh,31.0,16.2,30,0.0,14,Clear,Warm,9.9,7
+WTH0033,2024-11-02,Riyadh,29.4,14.2,25,0.0,23,Partly Cloudy,Warm,9.0,7
+WTH0034,2024-11-03,Riyadh,25.9,17.8,17,0.0,7,Cloudy,Warm,8.1,4
+WTH0035,2024-11-04,Riyadh,27.4,17.8,33,0.0,24,Clear,Warm,9.2,6
+WTH0036,2024-11-05,Riyadh,28.9,16.3,25,0.0,11,Clear,Warm,8.5,6
+WTH0037,2024-11-06,Riyadh,25.8,16.6,29,0.0,7,Clear,Warm,8.9,7
+WTH0038,2024-11-07,Riyadh,31.0,14.3,21,0.0,9,Clear,Warm,9.8,4
+WTH0039,2024-11-08,Riyadh,27.2,14.6,32,0.0,24,Cloudy,Warm,8.0,7
+WTH0040,2024-11-09,Riyadh,26.8,16.7,19,0.0,8,Cloudy,Warm,8.3,5
+WTH0041,2024-11-10,Riyadh,28.6,16.9,21,0.0,13,Cloudy,Warm,9.0,3
+WTH0042,2024-11-11,Riyadh,25.6,15.7,23,1.7,9,Clear,Rainy,8.3,2
+WTH0043,2024-11-12,Riyadh,28.3,15.7,15,0.0,9,Cloudy,Warm,8.1,5
+WTH0044,2024-11-13,Riyadh,28.5,14.6,19,1.9,6,Clear,Rainy,8.4,1
+WTH0045,2024-11-14,Riyadh,29.0,15.4,32,0.0,18,Cloudy,Warm,9.5,4
+WTH0046,2024-11-15,Riyadh,30.2,17.9,20,0.0,5,Clear,Warm,9.5,5
+WTH0047,2024-11-16,Riyadh,29.7,15.6,22,0.0,8,Partly Cloudy,Warm,9.7,6
+WTH0048,2024-11-17,Riyadh,26.3,17.3,29,0.0,12,Clear,Warm,8.0,4
+WTH0049,2024-11-18,Riyadh,27.4,15.1,17,0.0,13,Clear,Warm,9.3,6
+WTH0050,2024-11-19,Riyadh,29.1,17.4,25,0.0,8,Clear,Warm,8.4,5
+WTH0051,2024-11-20,Riyadh,25.2,16.4,26,0.0,15,Partly Cloudy,Warm,9.2,7
+WTH0052,2024-11-21,Riyadh,25.7,17.6,21,0.0,18,Clear,Warm,9.0,7
+WTH0053,2024-11-22,Riyadh,29.1,17.8,21,0.0,7,Clear,Warm,9.2,8
+WTH0054,2024-11-23,Riyadh,30.1,16.9,24,0.0,18,Clear,Warm,8.8,5
+WTH0055,2024-11-24,Riyadh,28.3,14.8,27,0.0,10,Cloudy,Warm,9.1,6
+WTH0056,2024-11-25,Riyadh,28.3,14.0,24,0.0,23,Cloudy,Warm,9.3,6
+WTH0057,2024-11-26,Riyadh,27.7,16.7,31,0.0,10,Clear,Warm,8.6,8
+WTH0058,2024-11-27,Riyadh,28.8,15.3,22,0.0,12,Clear,Warm,8.3,3
+WTH0059,2024-11-28,Riyadh,26.5,15.9,17,0.0,25,Cloudy,Warm,8.4,8
+WTH0060,2024-11-29,Riyadh,27.3,15.6,19,0.0,5,Clear,Warm,9.6,4
+WTH0061,2024-11-30,Riyadh,26.1,17.8,31,0.0,22,Clear,Warm,9.8,3
+WTH0062,2024-12-01,Riyadh,21.7,13.2,31,0.0,24,Clear,Pleasant,9.9,6
+WTH0063,2024-12-02,Riyadh,22.7,12.9,31,0.0,22,Partly Cloudy,Pleasant,9.8,8
+WTH0064,2024-12-03,Riyadh,24.2,11.8,22,0.0,13,Cloudy,Pleasant,9.0,4
+WTH0065,2024-12-04,Riyadh,20.6,10.3,24,0.0,15,Clear,Pleasant,9.8,3
+WTH0066,2024-12-05,Riyadh,19.8,10.9,19,0.0,7,Partly Cloudy,Pleasant,8.8,7
+WTH0067,2024-12-06,Riyadh,21.8,10.2,28,0.0,23,Clear,Pleasant,9.7,7
+WTH0068,2024-12-07,Riyadh,21.3,10.0,26,0.0,17,Partly Cloudy,Pleasant,9.1,8
+WTH0069,2024-12-08,Riyadh,22.3,12.4,22,0.0,13,Partly Cloudy,Pleasant,9.0,6
+WTH0070,2024-12-09,Riyadh,21.0,12.7,27,0.0,19,Clear,Pleasant,10.0,7
+WTH0071,2024-12-10,Riyadh,19.2,11.6,33,0.0,7,Partly Cloudy,Pleasant,8.3,6
+WTH0072,2024-12-11,Riyadh,20.1,11.0,25,0.0,15,Clear,Pleasant,9.5,6
+WTH0073,2024-12-12,Riyadh,20.7,13.8,28,0.0,7,Partly Cloudy,Pleasant,8.0,7
+WTH0074,2024-12-13,Riyadh,19.3,13.8,22,0.0,25,Clear,Pleasant,9.5,4
+WTH0075,2024-12-14,Riyadh,20.2,10.1,19,0.0,20,Clear,Pleasant,9.1,4
+WTH0076,2024-12-15,Riyadh,21.8,11.0,26,0.0,24,Clear,Pleasant,9.6,4
+WTH0077,2024-12-16,Riyadh,24.8,10.4,15,0.0,23,Partly Cloudy,Pleasant,8.8,8
+WTH0078,2024-12-17,Riyadh,20.2,12.4,35,0.0,14,Cloudy,Pleasant,9.6,7
+WTH0079,2024-12-18,Riyadh,23.7,11.4,28,0.0,7,Cloudy,Pleasant,9.3,3
+WTH0080,2024-12-19,Riyadh,24.1,13.3,18,0.0,16,Partly Cloudy,Pleasant,9.4,6
+WTH0081,2024-12-20,Riyadh,20.1,12.1,35,0.0,22,Partly Cloudy,Pleasant,8.9,8
+WTH0082,2024-12-21,Riyadh,22.6,11.3,22,0.0,7,Clear,Pleasant,9.8,4
+WTH0083,2024-12-22,Riyadh,23.5,12.3,27,0.0,20,Clear,Pleasant,8.4,4
+WTH0084,2024-12-23,Riyadh,21.1,11.0,23,0.0,13,Cloudy,Pleasant,8.0,4
+WTH0085,2024-12-24,Riyadh,19.5,12.9,30,0.0,12,Partly Cloudy,Pleasant,9.3,6
+WTH0086,2024-12-25,Riyadh,21.7,10.1,24,0.0,12,Clear,Pleasant,9.3,5
+WTH0087,2024-12-26,Riyadh,21.8,12.1,28,0.0,22,Clear,Pleasant,8.7,6
+WTH0088,2024-12-27,Riyadh,20.6,11.0,18,0.0,15,Clear,Pleasant,9.5,8
+WTH0089,2024-12-28,Riyadh,20.1,10.9,30,0.0,23,Cloudy,Pleasant,9.2,3
+WTH0090,2024-12-29,Riyadh,24.0,11.2,26,0.0,5,Cloudy,Pleasant,8.3,3

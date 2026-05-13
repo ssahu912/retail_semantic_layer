@@ -1,0 +1,13 @@
+promo_id,promo_name,promo_type,start_date,end_date,applicable_stores,applicable_days,min_order_value_sar,description,bundle_price_sar,regular_price_sar,discount_pct
+PROMO001,Weekend Family Feast,BUNDLE,2024-10-04,2024-12-27,ALL,"Friday,Saturday",25,2 Burgers + 2 Sides + 2 Drinks,75.00,99.00,24.24
+PROMO002,Student Discount,DISCOUNT,2024-10-01,2024-12-31,"S001,S003,S005","Monday,Tuesday,Wednesday,Thursday,Sunday",15,Show student ID,0.00,0.00,15.00
+PROMO003,Happy Hour Combo,BUNDLE,2024-10-01,2024-12-31,ALL,"Monday,Tuesday,Wednesday,Thursday,Sunday",0,Burger + Fries + Drink (2-5 PM),32.00,45.00,28.89
+PROMO004,National Day Special,DISCOUNT,2024-09-20,2024-09-25,ALL,"Friday,Saturday,Sunday,Monday,Tuesday,Wednesday,Thursday",0,Saudi National Day celebration,0.00,0.00,20.00
+PROMO005,Buy 2 Get 1 Free,BOGO,2024-11-01,2024-11-15,"S002,S004,S005","Friday,Saturday",0,"Buy 2 burgers, get 1 free",0.00,0.00,33.33
+PROMO006,Delivery Special,DISCOUNT,2024-10-15,2024-12-31,ALL,"Sunday,Monday,Tuesday,Wednesday,Thursday",10,Free delivery on orders above 50 SAR,0.00,0.00,10.00
+PROMO007,Lunch Express,BUNDLE,2024-10-01,2024-12-31,"S001,S003","Sunday,Monday,Tuesday,Wednesday,Thursday",0,Quick lunch combo (11 AM - 2 PM),28.00,38.00,26.32
+PROMO008,Kids Eat Free,FREEBIE,2024-11-20,2024-12-20,"S002,S005","Friday,Saturday",0,Free kids meal with adult combo purchase,0.00,0.00,100.00
+PROMO009,Mega Meal Deal,BUNDLE,2024-12-01,2024-12-31,ALL,"Friday,Saturday,Sunday,Monday,Tuesday,Wednesday,Thursday",0,Family meal for 4 people,120.00,165.00,27.27
+PROMO010,Late Night Special,DISCOUNT,2024-10-01,2024-12-31,"S001,S002,S004","Friday,Saturday,Sunday,Monday,Tuesday,Wednesday,Thursday",0,20% off after 10 PM,0.00,0.00,20.00
+PROMO011,Coffee & Dessert,BUNDLE,2024-11-01,2024-12-31,ALL,"Sunday,Monday,Tuesday,Wednesday,Thursday",0,Coffee + Any Dessert combo,18.00,25.00,28.00
+PROMO012,App Exclusive Deal,DISCOUNT,2024-10-10,2024-12-31,ALL,"Friday,Saturday,Sunday,Monday,Tuesday,Wednesday,Thursday",0,Order via app for 15% discount,0.00,0.00,15.00

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://example.org/qsr_kg/QSRTimeOntology" uri="file:/Users/shubhamsahu/Workspace/Git_Repos/retail_semantic_layer/QSR-ontology/qsr-time.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://example.org/qsr_kg/QSRPromotionsOntology" uri="file:/Users/shubhamsahu/Workspace/Git_Repos/retail_semantic_layer/QSR-ontology/qsr-promotions.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://example.org/qsr_kg/QSRPerformanceOntology" uri="file:/Users/shubhamsahu/Workspace/Git_Repos/retail_semantic_layer/QSR-ontology/qsr-performance.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://example.org/qsr_kg/QSRLocationOntology" uri="file:/Users/shubhamsahu/Workspace/Git_Repos/retail_semantic_layer/QSR-ontology/qsr-location.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://example.org/qsr_kg/QSRInventoryOntology" uri="file:/Users/shubhamsahu/Workspace/Git_Repos/retail_semantic_layer/QSR-ontology/qsr-inventory.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://example.org/qsr_kg/QSREventsOntology" uri="file:/Users/shubhamsahu/Workspace/Git_Repos/retail_semantic_layer/QSR-ontology/qsr-events.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://example.org/qsr_kg/QSRCoreOntology" uri="file:/Users/shubhamsahu/Workspace/Git_Repos/retail_semantic_layer/QSR-ontology/qsr-core.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://example.org/qsr_kg/QSRCompetitionOntology" uri="file:/Users/shubhamsahu/Workspace/Git_Repos/retail_semantic_layer/QSR-ontology/qsr-competition.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://example.org/qsr_kg" uri="file:/Users/shubhamsahu/Workspace/Git_Repos/retail_semantic_layer/QSR-ontology/master.ttl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base=""/>
+</catalog>

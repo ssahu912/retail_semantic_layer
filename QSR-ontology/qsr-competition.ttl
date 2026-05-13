@@ -1,0 +1,32 @@
+@prefix : <http://example.org/qsr_kg/QSRCompetitionOntology#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<http://example.org/qsr_kg/QSRCompetitionOntology> rdf:type owl:Ontology ;
+    rdfs:label "QSR Competition Ontology" ;
+    rdfs:comment "Competitive landscape entities including competitors and their market classification." .
+
+:Competitor rdf:type owl:Class ;
+    rdfs:label "Competitor" ;
+    rdfs:comment "An external organization offering similar products or services in the same market." .
+
+:CompetitorType rdf:type owl:Class ;
+    rdfs:label "Competitor Type" ;
+    rdfs:comment "A classification of competitors based on scale or market positioning." .
+
+:GlobalChain rdf:type owl:Class ;
+    rdfs:subClassOf :CompetitorType ;
+    rdfs:label "Global Chain" ;
+    rdfs:comment "A competitor operating across multiple countries or regions." .
+
+:LocalChain rdf:type owl:Class ;
+    rdfs:subClassOf :CompetitorType ;
+    rdfs:label "Local Chain" ;
+    rdfs:comment "A competitor operating within a limited geographic market." .
+
+:hasCompetitorType rdf:type owl:ObjectProperty ;
+    rdfs:label "has competitor type" ;
+    rdfs:comment "Associates a competitor with its market classification." ;
+    rdfs:domain :Competitor ;
+    rdfs:range :CompetitorType .

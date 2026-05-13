@@ -1,0 +1,28 @@
+@prefix : <http://example.org/qsr_kg/QSRPromotionsOntology#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix time: <http://example.org/qsr_kg/QSRTimeOntology#> .
+
+<http://example.org/qsr_kg/QSRPromotionsOntology> rdf:type owl:Ontology ;
+    rdfs:label "QSR Promotions Ontology" ;
+    rdfs:comment "Marketing campaigns and their temporal behavior." .
+
+:Promotion rdf:type owl:Class ;
+    rdfs:label "Promotion" ;
+    rdfs:comment "A marketing offer intended to influence customer purchasing behavior." .
+
+:PromotionPhase rdf:type owl:Class ;
+    rdfs:label "Promotion Phase" ;
+    rdfs:comment "A temporal phase of a promotion such as pre, active, or post." .
+
+:ActivePromotion rdf:type owl:Class ;
+    rdfs:subClassOf :PromotionPhase ;
+    rdfs:label "Active Promotion" ;
+    rdfs:comment "The phase during which a promotion is valid." .
+
+:hasInterval rdf:type owl:ObjectProperty ;
+    rdfs:label "has interval" ;
+    rdfs:comment "Associates a promotion with the time interval during which it applies." ;
+    rdfs:domain :Promotion ;
+    rdfs:range time:TimeInterval .

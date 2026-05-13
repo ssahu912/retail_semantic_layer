@@ -1,0 +1,37 @@
+poi_id,nearest_store_id,poi_name,poi_type,latitude,longitude,distance_km,avg_daily_footfall,description
+POI001,S001,Kingdom Centre,MALL,24.7119,46.6742,0.25,250000,High-end shopping mall
+POI002,S001,Al Faisaliah Tower,OFFICE,24.6906,46.6853,0.35,15000,Major office complex
+POI003,S001,King Fahd Medical City,HOSPITAL,24.7392,46.6847,0.8,8000,Large medical facility
+POI004,S001,Olaya Residential Area,RESIDENTIAL,24.715,46.68,0.3,120000,Dense residential zone
+POI005,S001,Riyadh International School,SCHOOL,24.72,46.67,0.6,2500,International school
+POI006,S001,Al Nakheel Mall,MALL,24.705,46.68,0.5,80000,Mid-tier shopping center
+POI007,S002,Al Malqa Mall,MALL,24.7831,46.6186,0.05,180000,Major shopping destination
+POI008,S002,Northern Suburbs,RESIDENTIAL,24.79,46.62,0.4,95000,Family neighborhoods
+POI009,S002,Qurtubah Business District,OFFICE,24.775,46.625,0.7,12000,Business offices
+POI010,S002,Al Malqa Park,RECREATION,24.782,46.615,0.25,5000,Public park
+POI011,S002,King Saud Medical Complex,HOSPITAL,24.77,46.63,0.9,6500,Hospital facility
+POI012,S002,Dar Al Uloom School,SCHOOL,24.785,46.622,0.3,1800,Private school
+POI013,S003,Al Sahafa District Offices,OFFICE,24.69,46.72,0.2,18000,Major business hub
+POI014,S003,Granada Center,MALL,24.685,46.715,0.35,65000,Shopping center
+POI015,S003,King Fahd Stadium,RECREATION,24.6797,46.7256,0.4,25000,Sports stadium
+POI016,S003,Al Rawdah Residential,RESIDENTIAL,24.692,46.718,0.3,88000,Residential area
+POI017,S003,Prince Sultan University,UNIVERSITY,24.7092,46.6781,1.2,8500,Private university
+POI018,S003,Specialized Hospital,HOSPITAL,24.685,46.71,0.45,4200,Specialist medical center
+POI019,S004,Granada Center,MALL,24.7744,46.7377,0.05,95000,Popular shopping mall
+POI020,S004,Granada Heights,RESIDENTIAL,24.778,46.74,0.4,105000,Modern residential
+POI021,S004,Al Aqeeq District,RESIDENTIAL,24.77,46.745,0.6,78000,Family neighborhoods
+POI022,S004,Riyadh Gallery Mall,MALL,24.7683,46.7264,0.5,120000,Large shopping mall
+POI023,S004,King Abdulaziz Public Library,CULTURAL,24.7725,46.7425,0.25,3500,Public library
+POI024,S004,Granada Tech Park,OFFICE,24.776,46.732,0.35,9500,Tech companies
+POI025,S005,Riyadh Park Mall,MALL,24.7536,46.6444,0.05,220000,Premium shopping mall
+POI026,S005,Hittin District,RESIDENTIAL,24.758,46.65,0.5,142000,Upscale residential
+POI027,S005,Panorama Mall,MALL,24.748,46.638,0.6,85000,Shopping center
+POI028,S005,Al Murooj Complex,OFFICE,24.76,46.64,0.7,21000,Corporate offices
+POI029,S005,Prince Sultan Military Medical City,HOSPITAL,24.7394,46.6372,0.8,9500,Military hospital
+POI030,S005,International Indian School,SCHOOL,24.75,46.65,0.4,3200,International school
+POI031,S005,Diplomatic Quarter,OFFICE,24.745,46.62,1.1,8000,Embassy area
+POI032,S001,Tahlia Street,COMMERCIAL,24.7089,46.6722,0.4,45000,High-end shopping street
+POI033,S002,Al Nakheel Plaza,OFFICE,24.781,46.617,0.15,7500,Office building
+POI034,S003,Sahara Mall,MALL,24.692,46.724,0.55,72000,Shopping mall
+POI035,S004,Granada Sports Club,RECREATION,24.772,46.739,0.2,4500,Sports facility
+POI036,S005,Riyadh Zoo,RECREATION,24.7333,46.6214,1.5,12000,Zoo and park
