@@ -17,7 +17,7 @@ This repository helps you set up and explore a sample knowledge Graph built for 
 1. Clone the repo:
 
 ```bash
-git clone https://github.com/<your-org>/retail_semantic_layer.git
+git clone https://github.com/ssahu912/retail_semantic_layer.git
 cd retail_semantic_layer
 ```
 
